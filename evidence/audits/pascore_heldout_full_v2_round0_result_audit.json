@@ -1,0 +1,67 @@
+{
+  "audit_date": "2026-09-29",
+  "condition": "pascore-full-v2",
+  "run_id": "pascore-heldout-full-v2",
+  "round": 0,
+  "split": "held_out",
+  "evaluation_mode": "strict",
+  "artifact": {
+    "path": "experiments/packages/pascore-heldout-full-v2-diagnostics-round-0.zip",
+    "sha256": "a4f26935b0692c6649607f16d10bf84f4b21e95c0d65239279d62ba961152c07",
+    "manifest_sha256": "ad037151d6b27399ac814b7d6ec912d524f6422c6218c9bbe08e15259df05b5a",
+    "file_count": 2057,
+    "hash_mismatches": 0,
+    "duplicate_names": 0,
+    "unsafe_paths": 0
+  },
+  "integrity": {
+    "entry_count": 324,
+    "unique_pairs": 324,
+    "feedback_ready": 127,
+    "source_execution_manifest_sha256": "f982add2397de877443658fad328f54ca6a16256d9722e8ac036774e62216b77"
+  },
+  "aggregate": {
+    "total": 324,
+    "generation_failure": 2,
+    "execution_failure": 61,
+    "protocol_failure": 2,
+    "semantic_failure": 62,
+    "semantic_success": 197,
+    "semantic_accuracy": 0.6080246913580247,
+    "macro_level_accuracy": 0.6599076192897703
+  },
+  "execution": {
+    "execution_success": 261,
+    "generation_failure": 2,
+    "policy_rejected": 10,
+    "program_failure": 51,
+    "timeout": 0
+  },
+  "by_model": {
+    "qwen3.8-chat": {"success": 76, "total": 108},
+    "deepseek-v4-flash-ascend1": {"success": 55, "total": 108},
+    "gemini-3.5-flash-lite": {"success": 66, "total": 108}
+  },
+  "by_level": {
+    "L1": {"success": 62, "total": 72},
+    "L2": {"success": 92, "total": 114},
+    "L3": {"success": 43, "total": 138}
+  },
+  "by_subtype": {
+    "simple_retrieval": {"success": 62, "total": 72},
+    "subtree_discovery": {"success": 34, "total": 39},
+    "exact_window": {"success": 28, "total": 39},
+    "sampling_constrained": {"success": 30, "total": 36},
+    "same_shot_alignment": {"success": 10, "total": 45},
+    "cross_shot_comparison": {"success": 7, "total": 48},
+    "adaptive_access": {"success": 26, "total": 45}
+  },
+  "round_1": {
+    "eligible": 127,
+    "qwen3.8-chat": 32,
+    "deepseek-v4-flash-ascend1": 53,
+    "gemini-3.5-flash-lite": 42,
+    "repair_plan_sha256": "bf9272a5bb760f6f58592ba32403a2b177824b5a321e9bf46d392769ff090f8c",
+    "protocol_sha256": "71aedf0e8bec69339675c0db32a09a5e4c610497cd4bd3226dd62f8e0a4e7017"
+  }
+}

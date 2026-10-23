@@ -1,0 +1,46 @@
+{
+  "amendment_date": "2026-09-29",
+  "condition": "primary-zero-shot-v2",
+  "decision": {
+    "primary_evaluation_mode": "diagnostic-v2",
+    "retain_strict_result_as_sensitivity_analysis": true,
+    "rerun_generation": false,
+    "rerun_execution": false
+  },
+  "reason": [
+    "The frozen v2 prompt requires non_empty, same_size, signal_all_finite, time_all_finite, and time_strictly_increasing.",
+    "Strict mode additionally requires time_monotonic_non_decreasing when it is present in Gold, although that field is not exposed in the v2 prompt.",
+    "Strict Held-out evaluation therefore labeled 47 execution-success cases as missing_validation even though the sampled reports contained every validation field visible to the model.",
+    "diagnostic-v2 checks only prompt-visible validation fields and normalizes the previously specified identity-to-target equivalent representation without changing numerical summaries or repairing incorrect visible values."
+  ],
+  "timing": {
+    "diagnostic_v2_implementation_last_write": "2026-09-26T17:17:26+08:00",
+    "diagnostic_v2_test_last_write": "2026-09-26T17:16:23+08:00",
+    "held_out_execution_date": "2026-09-29",
+    "diagnostic_v2_outcomes_observed_before_decision": false
+  },
+  "scope": {
+    "models": [
+      "qwen3.8-chat",
+      "deepseek-v4-flash-ascend1",
+      "gemini-3.5-flash-lite"
+    ],
+    "task_count": 108,
+    "task_model_cases": 324
+  },
+  "sha256": {
+    "benchmark/gold138_primary_zero_shot_v2.jsonl": "d72a927cf5fd3157bf54999f2d481e4031597f4e2a5431066ee6b25f3f0e8903",
+    "experiments/config/protocol_v2_heldout.json": "1838d337ca7d1fe06a1c918ba03276ce34fb7c89614ccf68ee88046cd01f38b3",
+    "scripts/evaluate_generated_batch.py": "d652e1cec045185859f5f3087f3f30309fc516207fcca1728d292d9391becb68",
+    "scripts/semantic_evaluator.py": "a17ce0abd832dedcd3f9960d5be01ea39874367c6accb0793a21a681eb555083",
+    "tests/test_semantic_evaluator.py": "1029cd111fa15efc00e96edff7e6f038430e005b6084f7601e0afc34bf948a77"
+  },
+  "strict_evaluation_observation": {
+    "execution_failure": 249,
+    "missing_target_summary": 28,
+    "missing_validation": 47,
+    "protocol_failure": 75,
+    "semantic_success": 0,
+    "total": 324
+  }
+}

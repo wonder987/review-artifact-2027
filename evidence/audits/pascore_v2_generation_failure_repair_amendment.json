@@ -1,0 +1,41 @@
+{
+  "amendment_date": "2026-09-29",
+  "condition": "pascore-full-v2",
+  "decision": {
+    "generation_failure_repair_behavior": "Use the generation-failure artifact hash as the parent binding and an explicit no-program marker in the next-round repair prompt.",
+    "extra_initial_generation_attempt": false,
+    "repair_budget_changed": false,
+    "resource_budget_changed": false
+  },
+  "reason": [
+    "Round 0 contained two generation timeouts with structured feedback but no parent program file.",
+    "The frozen controller required a parent program for every feedback-ready case and would terminate before producing any Round 1 prompts.",
+    "Treating the next call as the already-budgeted Round 1 repair preserves the fixed one-attempt initial-generation protocol and the maximum two-round repair budget.",
+    "The parent binding remains auditable because the repair plan records the immutable generation-failure artifact hash from the Round 0 manifest."
+  ],
+  "scope": {
+    "affected_case_count": 2,
+    "affected_cases": [
+      "deepseek-v4-flash-ascend1/gold138_l3_030",
+      "deepseek-v4-flash-ascend1/gold138_l3_035"
+    ],
+    "round": 1,
+    "run_id": "pascore-heldout-full-v2"
+  },
+  "timing": {
+    "round_0_results_observed": true,
+    "round_1_prompts_generated_before_decision": false,
+    "round_1_model_outcomes_observed_before_decision": false
+  },
+  "verification": {
+    "full_test_count": 267,
+    "full_test_status": "passed",
+    "new_regression_test": "test_generation_failure_uses_failure_artifact_as_repair_parent"
+  },
+  "sha256": {
+    "diagnostics_round_0_zip": "a4f26935b0692c6649607f16d10bf84f4b21e95c0d65239279d62ba961152c07",
+    "frozen_repair_controller": "bdf6a4f6d85a708f2fde06e83c794eb975a83c9311709a087e6ffe3ad7c62418",
+    "amended_repair_controller": "6f9bce8b504fabcf6a627b904c3e407d195848049517634eb4009062a78b0b93",
+    "tests/test_repair_controller.py": "ef80c16b409b092c5f1bf50f658f168c415e8ee17ad72cda470ffc840fd8709d"
+  }
+}

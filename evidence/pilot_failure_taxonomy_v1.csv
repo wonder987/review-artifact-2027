@@ -1,0 +1,13 @@
+major_category,failure_subtype,count
+MDSplus interaction,Hallucinated API,30
+MDSplus interaction,Local/remote API confusion,12
+MDSplus interaction,Wrong API signature,6
+MDSplus interaction,TDI expression error,4
+MDSplus interaction,Node lookup error,3
+Code generation,Syntax error,12
+Code generation,Generation timeout,3
+Semantic result,Target identity mismatch,9
+Semantic result,Signal mismatch,1
+Resource/runtime,Memory exhaustion,5
+Resource/runtime,Array processing error,3
+Resource/runtime,Serialization error,1

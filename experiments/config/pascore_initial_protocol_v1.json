@@ -1,0 +1,19 @@
+{
+  "default_split": "pilot",
+  "generation_attempts": 1,
+  "generation_mode": "direct_zero_shot",
+  "held_out_enabled": false,
+  "max_network_retries": 3,
+  "max_output_tokens": 8192,
+  "prompt_version": "pascore-grounded-v1",
+  "protocol_id": "pascore-initial-pilot-v1",
+  "repair_rounds": 0,
+  "request_timeout_seconds": 600,
+  "retry_backoff_seconds": [
+    2,
+    4,
+    8
+  ],
+  "schema_version": "1.0",
+  "temperature": 0
+}

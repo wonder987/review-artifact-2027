@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "note": "Source hashes identify immutable experimental archives. Review-copy hashes identify text-anonymized copies in this artifact.",
+  "archives": [
+    {
+      "archive": "evidence/archives/ablation-no-metadata-grounding-qwen-v1-diagnostics-round-0.zip",
+      "source_sha256": "d784c8ede9c3c12df0fa8829b9993cd1c677b0b0c87b21cba4b74c3cadbab131",
+      "review_copy_sha256": "d784c8ede9c3c12df0fa8829b9993cd1c677b0b0c87b21cba4b74c3cadbab131",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/ablation-no-metadata-grounding-qwen-v1-diagnostics-round-1.zip",
+      "source_sha256": "fcc6bd81082a632e94e0a244d2024933e2037a3446e8c401d6d796100babbca8",
+      "review_copy_sha256": "13233408fa324f18a365ee34c04ffc1444ad08cf509117bf5d4c3cfe1ec448f2",
+      "anonymized_entries": [
+        "logs/qwen3.8-chat/gold138_l2_034/stderr.log"
+      ]
+    },
+    {
+      "archive": "evidence/archives/ablation-no-metadata-grounding-qwen-v1-diagnostics-round-2.zip",
+      "source_sha256": "6b4ecbe5306ce8a16124177014e3e2de9e15ff31cf38eeae6df0ee0aa7bc29c3",
+      "review_copy_sha256": "6b4ecbe5306ce8a16124177014e3e2de9e15ff31cf38eeae6df0ee0aa7bc29c3",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/ablation-no-resource-guard-qwen-v1-diagnostics-round-0.zip",
+      "source_sha256": "abea2eb1b6a9c1445226fbaa1e0684bc6e0afc03a36bcc4c45a03425fb2773a6",
+      "review_copy_sha256": "abea2eb1b6a9c1445226fbaa1e0684bc6e0afc03a36bcc4c45a03425fb2773a6",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/ablation-no-resource-guard-qwen-v1-diagnostics-round-1.zip",
+      "source_sha256": "35635c522276a75701bbf8d656fcca708aafd82ab6f3cf548d0154e487a887e0",
+      "review_copy_sha256": "35635c522276a75701bbf8d656fcca708aafd82ab6f3cf548d0154e487a887e0",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/ablation-no-resource-guard-qwen-v1-diagnostics-round-2.zip",
+      "source_sha256": "aec0f58951542b3ee3f33c895041262c4efb2842dfb5202b7a9163a378c7b352",
+      "review_copy_sha256": "aec0f58951542b3ee3f33c895041262c4efb2842dfb5202b7a9163a378c7b352",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/ablation-no-structured-feedback-qwen-v1-diagnostics-round-0.zip",
+      "source_sha256": "c49d4d9f95dc8f249dad33f26011531c59d7be3658b069342823f93a2e36e297",
+      "review_copy_sha256": "c49d4d9f95dc8f249dad33f26011531c59d7be3658b069342823f93a2e36e297",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/ablation-no-structured-feedback-qwen-v1-diagnostics-round-1.zip",
+      "source_sha256": "7ed8c5ae72099f76f1327870f773bfbb8dea2cd9be55d918e5b4238333fb740c",
+      "review_copy_sha256": "7ed8c5ae72099f76f1327870f773bfbb8dea2cd9be55d918e5b4238333fb740c",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/ablation-no-structured-feedback-qwen-v1-diagnostics-round-2.zip",
+      "source_sha256": "add083f42e3f1bcd0a1491f9a0c9096ab94ba1d468f40c136ffc2a6f91900fc1",
+      "review_copy_sha256": "add083f42e3f1bcd0a1491f9a0c9096ab94ba1d468f40c136ffc2a6f91900fc1",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/direct-zero-shot-heldout-v2-diagnostics.zip",
+      "source_sha256": "d81711b0fca40475667a1d05ff92237e07b1b2924a1fcbae164299154cd6bb84",
+      "review_copy_sha256": "c550afe2291f06c08de3330b45bbe8672c45e37881a01047b36e5aecd302071c",
+      "anonymized_entries": [
+        "gold/reference_index.json"
+      ]
+    },
+    {
+      "archive": "evidence/archives/feedback-baseline-heldout-qwen-v1-diagnostics-round-0.zip",
+      "source_sha256": "5587191e5805e6427547ad89c506c89575a084678c2bef227e294da07fb72e32",
+      "review_copy_sha256": "cef1a6ae052caaed6c04057f595f8286b7f685df30ca0ae7a5d6b0a354ad4e7b",
+      "anonymized_entries": [
+        "logs/qwen3.8-chat/gold138_l2_044/stderr.log"
+      ]
+    },
+    {
+      "archive": "evidence/archives/feedback-baseline-heldout-qwen-v1-diagnostics-round-1.zip",
+      "source_sha256": "5e798f653658983b88061d947f87ad527d1b5cc43b944244a42ce37236495218",
+      "review_copy_sha256": "5e798f653658983b88061d947f87ad527d1b5cc43b944244a42ce37236495218",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/feedback-baseline-heldout-qwen-v1-diagnostics-round-2.zip",
+      "source_sha256": "90c87ca87d471825c80ed1b76da0b3a47253e49ecfbc02868ea27f1a15cde7a2",
+      "review_copy_sha256": "90c87ca87d471825c80ed1b76da0b3a47253e49ecfbc02868ea27f1a15cde7a2",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/pascore-heldout-full-v2-diagnostics-round-0.zip",
+      "source_sha256": "a4f26935b0692c6649607f16d10bf84f4b21e95c0d65239279d62ba961152c07",
+      "review_copy_sha256": "a3f6c8d4ad0b4b70ad0b4b225f2cf7720d60fc0f5c2219d282a54d412ebef55f",
+      "anonymized_entries": [
+        "logs/qwen3.8-chat/gold138_l2_044/stderr.log"
+      ]
+    },
+    {
+      "archive": "evidence/archives/pascore-heldout-full-v2-diagnostics-round-1.zip",
+      "source_sha256": "5fece80ac52d1aa95e28f7c103663f9f02311d433a0f101d5dcef2a2cbc6585d",
+      "review_copy_sha256": "5fece80ac52d1aa95e28f7c103663f9f02311d433a0f101d5dcef2a2cbc6585d",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/pascore-heldout-full-v2-diagnostics-round-2.zip",
+      "source_sha256": "b533056e9b0fa9a80de8c940b3447f9b5a266945062025be8420385d4e6affd1",
+      "review_copy_sha256": "b533056e9b0fa9a80de8c940b3447f9b5a266945062025be8420385d4e6affd1",
+      "anonymized_entries": []
+    },
+    {
+      "archive": "evidence/archives/self-debugging-heldout-qwen-v1-diagnostics-round-0.zip",
+      "source_sha256": "f38a1fae6d1f43df1ca846c16737a6b696c6363d1f878f62e08444d29c44cb2c",
+      "review_copy_sha256": "f38a1fae6d1f43df1ca846c16737a6b696c6363d1f878f62e08444d29c44cb2c",
+      "anonymized_entries": []
+    }
+  ]
+}

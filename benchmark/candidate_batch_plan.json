@@ -1,0 +1,877 @@
+[
+  {
+    "daqtime": 21,
+    "estimated_total_mib": 240.325927734375,
+    "frequency": 1000000,
+    "node": "\\HEA1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 21000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 70000,
+    "signal_name": "HEA1",
+    "size_band": "large",
+    "subtree": "t5",
+    "task_id": "east_hea1_70000_large",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 10,
+    "estimated_total_mib": 1144.4091796875,
+    "frequency": 10000000,
+    "node": "\\DOWN_I",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 100000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 70000,
+    "signal_name": "DOWN_I",
+    "size_band": "large",
+    "subtree": "t6",
+    "task_id": "east_down_i_70000_large",
+    "tree": "east",
+    "trigtime": -0.0,
+    "unit": "V"
+  },
+  {
+    "daqtime": 77,
+    "estimated_total_mib": 8.81195068359375,
+    "frequency": 10000,
+    "node": "\\CDG1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 770000,
+    "segment_num": "16",
+    "segment_time": "5.0",
+    "shot": 70000,
+    "signal_name": "CDG1",
+    "size_band": "safe_full",
+    "subtree": "t1",
+    "task_id": "east_cdg1_70000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 18,
+    "estimated_total_mib": 10.2996826171875,
+    "frequency": 50000,
+    "node": "\\FOCS1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 900000,
+    "segment_num": "4",
+    "segment_time": "5.0",
+    "shot": 70000,
+    "signal_name": "FOCS1",
+    "size_band": "safe_full",
+    "subtree": "t2",
+    "task_id": "east_focs1_70000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "A"
+  },
+  {
+    "daqtime": 17,
+    "estimated_total_mib": 9.72747802734375,
+    "frequency": 50000,
+    "node": "\\CIIIL1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 850000,
+    "segment_num": "4",
+    "segment_time": "5.0",
+    "shot": 70000,
+    "signal_name": "CIIIL1",
+    "size_band": "safe_full",
+    "subtree": "t3",
+    "task_id": "east_ciiil1_70000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 12,
+    "estimated_total_mib": 1373.291015625,
+    "frequency": 10000000,
+    "node": "\\POINT0",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 120000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 70000,
+    "signal_name": "POINT0",
+    "size_band": "very_large",
+    "subtree": "t6",
+    "task_id": "east_point0_70000_very_large",
+    "tree": "east",
+    "trigtime": -2,
+    "unit": "V"
+  },
+  {
+    "daqtime": 11,
+    "estimated_total_mib": 125.885009765625,
+    "frequency": 1000000,
+    "node": "\\HRS01H",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 11000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 70000,
+    "signal_name": "HRS01H",
+    "size_band": "window_required",
+    "subtree": "t5",
+    "task_id": "east_hrs01h_70000_window_required",
+    "tree": "east",
+    "trigtime": -0.5,
+    "unit": "V"
+  },
+  {
+    "daqtime": 11,
+    "estimated_total_mib": 125.885009765625,
+    "frequency": 1000000,
+    "node": "\\PEM20",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 11000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 70000,
+    "signal_name": "PEM20",
+    "size_band": "window_required",
+    "subtree": "t6",
+    "task_id": "east_pem20_70000_window_required",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 12,
+    "estimated_total_mib": 274.658203125,
+    "frequency": 2000000,
+    "node": "\\PLM23P",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 24000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 100000,
+    "signal_name": "PLM23P",
+    "size_band": "large",
+    "subtree": "t3",
+    "task_id": "east_plm23p_100000_large",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 12,
+    "estimated_total_mib": 549.31640625,
+    "frequency": 4000000,
+    "node": "\\CMSE_DIG1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 48000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 100000,
+    "signal_name": "CMSE_DIG1",
+    "size_band": "large",
+    "subtree": "t7",
+    "task_id": "east_cmse_dig1_100000_large",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 18,
+    "estimated_total_mib": 10.2996826171875,
+    "frequency": 50000,
+    "node": "\\DAQ_TRIG",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 900000,
+    "segment_num": "4",
+    "segment_time": "5.0",
+    "shot": 100000,
+    "signal_name": "DAQ_TRIG",
+    "size_band": "safe_full",
+    "subtree": "t1",
+    "task_id": "east_daq_trig_100000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 28,
+    "estimated_total_mib": 3.204345703125,
+    "frequency": 10000,
+    "node": "\\F901",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 280000,
+    "segment_num": "error",
+    "segment_time": "5.0",
+    "shot": 100000,
+    "signal_name": "F901",
+    "size_band": "safe_full",
+    "subtree": "t2",
+    "task_id": "east_f901_100000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 18,
+    "estimated_total_mib": 41.19873046875,
+    "frequency": 200000,
+    "node": "\\RXC10A",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 3600000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 100000,
+    "signal_name": "RXC10A",
+    "size_band": "safe_full",
+    "subtree": "t3",
+    "task_id": "east_rxc10a_100000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 12,
+    "estimated_total_mib": 137.3291015625,
+    "frequency": 1000000,
+    "node": "\\AHM1P",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 12000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 100000,
+    "signal_name": "AHM1P",
+    "size_band": "window_required",
+    "subtree": "t3",
+    "task_id": "east_ahm1p_100000_window_required",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 12,
+    "estimated_total_mib": 137.3291015625,
+    "frequency": 1000000,
+    "node": "\\HRS01H",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 12000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 100000,
+    "signal_name": "HRS01H",
+    "size_band": "window_required",
+    "subtree": "t4",
+    "task_id": "east_hrs01h_100000_window_required",
+    "tree": "east",
+    "trigtime": -0.5,
+    "unit": "V"
+  },
+  {
+    "daqtime": 28,
+    "estimated_total_mib": 64.0869140625,
+    "frequency": 200000,
+    "node": "\\FREQ",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 5600000,
+    "segment_num": "6",
+    "segment_time": "5.0",
+    "shot": 100000,
+    "signal_name": "FREQ",
+    "size_band": "window_required",
+    "subtree": "t5",
+    "task_id": "east_freq_100000_window_required",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 1064,
+    "estimated_total_mib": 608.82568359375,
+    "frequency": 50000,
+    "node": "\\CIIIL1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 53200000,
+    "segment_num": "213",
+    "segment_time": "5.0",
+    "shot": 106915,
+    "signal_name": "CIIIL1",
+    "size_band": "large",
+    "subtree": "t5",
+    "task_id": "east_ciiil1_106915_large",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 1064,
+    "estimated_total_mib": 2435.302734375,
+    "frequency": 200000,
+    "node": "\\RXC10A",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 212800000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 106915,
+    "signal_name": "RXC10A",
+    "size_band": "very_large",
+    "subtree": "t3",
+    "task_id": "east_rxc10a_106915_very_large",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 1058,
+    "estimated_total_mib": 2421.56982421875,
+    "frequency": 200000,
+    "node": "\\HRS01H",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 211600000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 106915,
+    "signal_name": "HRS01H",
+    "size_band": "very_large",
+    "subtree": "t4",
+    "task_id": "east_hrs01h_106915_very_large",
+    "tree": "east",
+    "trigtime": -0.5,
+    "unit": "V"
+  },
+  {
+    "daqtime": 1068,
+    "estimated_total_mib": 122.222900390625,
+    "frequency": 10000,
+    "node": "\\BOLO1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 10680000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 106915,
+    "signal_name": "BOLO1",
+    "size_band": "window_required",
+    "subtree": "t4",
+    "task_id": "east_bolo1_106915_window_required",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 1068,
+    "estimated_total_mib": 122.222900390625,
+    "frequency": 10000,
+    "node": "\\BOLOV1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 10680000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 106915,
+    "signal_name": "BOLOV1",
+    "size_band": "window_required",
+    "subtree": "t5",
+    "task_id": "east_bolov1_106915_window_required",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 17,
+    "estimated_total_mib": 1.94549560546875,
+    "frequency": 10000,
+    "node": "\\BP_HAB_DT",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 170000,
+    "segment_num": "4",
+    "segment_time": "5.0",
+    "shot": 130000,
+    "signal_name": "BP_HAB_DT",
+    "size_band": "safe_full",
+    "subtree": "t2",
+    "task_id": "east_bp_hab_dt_130000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 21,
+    "estimated_total_mib": 2.40325927734375,
+    "frequency": 10000,
+    "node": "\\BOLO1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 210000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 130000,
+    "signal_name": "BOLO1",
+    "size_band": "safe_full",
+    "subtree": "t4",
+    "task_id": "east_bolo1_130000_safe_full",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 17,
+    "estimated_total_mib": 9.72747802734375,
+    "frequency": 50000,
+    "node": "\\CIIIL1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 850000,
+    "segment_num": "4",
+    "segment_time": "5.0",
+    "shot": 130000,
+    "signal_name": "CIIIL1",
+    "size_band": "safe_full",
+    "subtree": "t5",
+    "task_id": "east_ciiil1_130000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 17,
+    "estimated_total_mib": 194.549560546875,
+    "frequency": 1000000,
+    "node": "\\RXC10A",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 17000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 130000,
+    "signal_name": "RXC10A",
+    "size_band": "window_required",
+    "subtree": "t3",
+    "task_id": "east_rxc10a_130000_window_required",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 11,
+    "estimated_total_mib": 125.885009765625,
+    "frequency": 1000000,
+    "node": "\\HRS01H",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 11000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 130000,
+    "signal_name": "HRS01H",
+    "size_band": "window_required",
+    "subtree": "t4",
+    "task_id": "east_hrs01h_130000_window_required",
+    "tree": "east",
+    "trigtime": -0.5,
+    "unit": "V"
+  },
+  {
+    "daqtime": 11,
+    "estimated_total_mib": 125.885009765625,
+    "frequency": 1000000,
+    "node": "\\CMSE_DIG1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 11000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 130000,
+    "signal_name": "CMSE_DIG1",
+    "size_band": "window_required",
+    "subtree": "t7",
+    "task_id": "east_cmse_dig1_130000_window_required",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 72,
+    "estimated_total_mib": 823.974609375,
+    "frequency": 1000000,
+    "node": "\\RXC10A",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 72000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 150000,
+    "signal_name": "RXC10A",
+    "size_band": "large",
+    "subtree": "t3",
+    "task_id": "east_rxc10a_150000_large",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 66,
+    "estimated_total_mib": 755.31005859375,
+    "frequency": 1000000,
+    "node": "\\HRS01H",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 66000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 150000,
+    "signal_name": "HRS01H",
+    "size_band": "large",
+    "subtree": "t4",
+    "task_id": "east_hrs01h_150000_large",
+    "tree": "east",
+    "trigtime": -0.5,
+    "unit": "V"
+  },
+  {
+    "daqtime": 72,
+    "estimated_total_mib": 823.974609375,
+    "frequency": 1000000,
+    "node": "\\JXUV01",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 72000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 150000,
+    "signal_name": "JXUV01",
+    "size_band": "large",
+    "subtree": "t5",
+    "task_id": "east_jxuv01_150000_large",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 82,
+    "estimated_total_mib": 0.93841552734375,
+    "frequency": 1000,
+    "node": "\\CCR1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 82000,
+    "segment_num": "error",
+    "segment_time": "5.0",
+    "shot": 150000,
+    "signal_name": "CCR1",
+    "size_band": "safe_full",
+    "subtree": "t2",
+    "task_id": "east_ccr1_150000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "A/s"
+  },
+  {
+    "daqtime": 72,
+    "estimated_total_mib": 16.4794921875,
+    "frequency": 20000,
+    "node": "\\SETC0",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 1440000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 150000,
+    "signal_name": "SETC0",
+    "size_band": "safe_full",
+    "subtree": "t3",
+    "task_id": "east_setc0_150000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 86,
+    "estimated_total_mib": 9.8419189453125,
+    "frequency": 10000,
+    "node": "\\BOLO1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 860000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 150000,
+    "signal_name": "BOLO1",
+    "size_band": "safe_full",
+    "subtree": "t4",
+    "task_id": "east_bolo1_150000_safe_full",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 72,
+    "estimated_total_mib": 164.794921875,
+    "frequency": 200000,
+    "node": "\\AXUV_DIV1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 14400000,
+    "segment_num": "15",
+    "segment_time": "5.0",
+    "shot": 150000,
+    "signal_name": "AXUV_DIV1",
+    "size_band": "window_required",
+    "subtree": "t2",
+    "task_id": "east_axuv_div1_150000_window_required",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 72,
+    "estimated_total_mib": 164.794921875,
+    "frequency": 200000,
+    "node": "\\LVIC1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 14400000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 150000,
+    "signal_name": "LVIC1",
+    "size_band": "window_required",
+    "subtree": "t3",
+    "task_id": "east_lvic1_150000_window_required",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 72,
+    "estimated_total_mib": 82.3974609375,
+    "frequency": 100000,
+    "node": "\\BII1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 7200000,
+    "segment_num": "15",
+    "segment_time": "5.0",
+    "shot": 150000,
+    "signal_name": "BII1",
+    "size_band": "window_required",
+    "subtree": "t5",
+    "task_id": "east_bii1_150000_window_required",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 12,
+    "estimated_total_mib": 274.658203125,
+    "frequency": 2000000,
+    "node": "\\CHP6N",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 24000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 165000,
+    "signal_name": "CHP6N",
+    "size_band": "large",
+    "subtree": "t6",
+    "task_id": "east_chp6n_165000_large",
+    "tree": "east",
+    "trigtime": -2,
+    "unit": "V"
+  },
+  {
+    "daqtime": 17,
+    "estimated_total_mib": 1.94549560546875,
+    "frequency": 10000,
+    "node": "\\BP_HAB_DT",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 170000,
+    "segment_num": "4",
+    "segment_time": "5.0",
+    "shot": 165000,
+    "signal_name": "BP_HAB_DT",
+    "size_band": "safe_full",
+    "subtree": "t2",
+    "task_id": "east_bp_hab_dt_165000_safe_full",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 12,
+    "estimated_total_mib": 6.866455078125,
+    "frequency": 50000,
+    "node": "\\DIVLPS06",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 600000,
+    "segment_num": "3",
+    "segment_time": "5.0",
+    "shot": 165000,
+    "signal_name": "DIVLPS06",
+    "size_band": "safe_full",
+    "subtree": "t3",
+    "task_id": "east_divlps06_165000_safe_full",
+    "tree": "east",
+    "trigtime": -2,
+    "unit": "V"
+  },
+  {
+    "daqtime": 31,
+    "estimated_total_mib": 3.54766845703125,
+    "frequency": 10000,
+    "node": "\\BOLO1",
+    "planned_actions": [
+      "preflight",
+      "full_retrieval"
+    ],
+    "sample_num": 310000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 165000,
+    "signal_name": "BOLO1",
+    "size_band": "safe_full",
+    "subtree": "t4",
+    "task_id": "east_bolo1_165000_safe_full",
+    "tree": "east",
+    "trigtime": -1,
+    "unit": "V"
+  },
+  {
+    "daqtime": 10,
+    "estimated_total_mib": 228.8818359375,
+    "frequency": 2000000,
+    "node": "\\SSNPA01P",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 20000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 165000,
+    "signal_name": "SSNPA01P",
+    "size_band": "window_required",
+    "subtree": "t2",
+    "task_id": "east_ssnpa01p_165000_window_required",
+    "tree": "east",
+    "trigtime": -0.01,
+    "unit": "V"
+  },
+  {
+    "daqtime": 17,
+    "estimated_total_mib": 194.549560546875,
+    "frequency": 1000000,
+    "node": "\\LVIC1",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 17000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 165000,
+    "signal_name": "LVIC1",
+    "size_band": "window_required",
+    "subtree": "t3",
+    "task_id": "east_lvic1_165000_window_required",
+    "tree": "east",
+    "trigtime": -7,
+    "unit": "V"
+  },
+  {
+    "daqtime": 11,
+    "estimated_total_mib": 125.885009765625,
+    "frequency": 1000000,
+    "node": "\\HRS01H",
+    "planned_actions": [
+      "preflight"
+    ],
+    "sample_num": 11000000,
+    "segment_num": "error",
+    "segment_time": "1.0",
+    "shot": 165000,
+    "signal_name": "HRS01H",
+    "size_band": "window_required",
+    "subtree": "t4",
+    "task_id": "east_hrs01h_165000_window_required",
+    "tree": "east",
+    "trigtime": -0.5,
+    "unit": "V"
+  }
+]

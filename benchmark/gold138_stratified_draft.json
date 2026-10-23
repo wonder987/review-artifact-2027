@@ -1,0 +1,3960 @@
+{
+  "benchmark_name": "PA-SCoRe MDSplus Gold-138",
+  "created_date": "2026-09-21",
+  "excluded_diagnostics": [
+    {
+      "mdsplus_points": 10000,
+      "mongodb_points": 12000,
+      "node": "\\RXC17A",
+      "reason": "mongodb_sample_count_mismatch",
+      "shot": 90000,
+      "subtree": "t3"
+    }
+  ],
+  "grounding_distribution": {
+    "explicit_target": 46,
+    "semantic_request": 46,
+    "subtree_hidden": 46
+  },
+  "operation_distribution": {
+    "full_retrieval": 62,
+    "index_window": 38,
+    "metadata_preflight": 38
+  },
+  "repair_set_policy": "derive from observed model failures and a separately reported coverage-oriented seeded-failure subset",
+  "schema_version": "0.2-draft",
+  "status": "stratified_draft",
+  "task_count": 138,
+  "tasks": [
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ahm1p_100000_t3_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 137.3291015625,
+        "frequency": 1000000.0,
+        "node": "\\AHM1P",
+        "sample_num": 12000000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "AHM1P",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_ahm1p_110003_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 2010000,
+        "index_start": 2000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.005,
+        "time_start": 0.0,
+        "time_step": 5e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 297.54638671875,
+        "frequency": 2000000.0,
+        "node": "\\AHM1P",
+        "sample_num": 26000000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "AHM1P",
+        "size_band": "large",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_ahm3p_110003_t3_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 185.96649169921875,
+        "frequency": 1250000.0,
+        "node": "\\AHM3P",
+        "sample_num": 16250000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "AHM3P",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_axuv_div1_106915_t2_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 1064.0,
+        "estimated_total_mib": 2435.302734375,
+        "frequency": 200000.0,
+        "node": "\\AXUV_DIV1",
+        "sample_num": 212800000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "AXUV_DIV1",
+        "size_band": "very_large",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_axuv_div1_150000_t2_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 72.0,
+        "estimated_total_mib": 164.794921875,
+        "frequency": 200000.0,
+        "node": "\\AXUV_DIV1",
+        "sample_num": 14400000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "AXUV_DIV1",
+        "size_band": "window_required",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bii1_150000_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 72.0,
+        "estimated_total_mib": 82.3974609375,
+        "frequency": 100000.0,
+        "node": "\\BII1",
+        "sample_num": 7200000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "BII1",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_biim1_165000_t6_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 13.73291015625,
+        "frequency": 100000.0,
+        "node": "\\BIIM1",
+        "sample_num": 1200000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "BIIM1",
+        "size_band": "safe_full",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_bolo1_100000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 2.5177001953125,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 220000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_bolo1_106915_t4_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 20000,
+        "index_start": 10000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 1.0,
+        "time_start": 0.0,
+        "time_step": 0.0001
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 1068.0,
+        "estimated_total_mib": 122.222900390625,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 10680000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "BOLO1",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_bolo1_110003_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 23.0,
+        "estimated_total_mib": 2.63214111328125,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 230000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bolo1_120000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 36.0,
+        "estimated_total_mib": 4.119873046875,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 360000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_bolo1_130000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 21.0,
+        "estimated_total_mib": 2.40325927734375,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 210000,
+        "server": "202.127.204.12",
+        "shot": 130000,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bolo1_140000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 33.0,
+        "estimated_total_mib": 3.77655029296875,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 330000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_bolo1_147001_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 36.0,
+        "estimated_total_mib": 4.119873046875,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 360000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_bolo1_150000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 86.0,
+        "estimated_total_mib": 9.8419189453125,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 860000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_bolo1_160030_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 24.0,
+        "estimated_total_mib": 2.74658203125,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 240000,
+        "server": "202.127.204.12",
+        "shot": 160030,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_bolo1_165000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 31.0,
+        "estimated_total_mib": 3.54766845703125,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 310000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_bolo1_90000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 21.0,
+        "estimated_total_mib": 2.40325927734375,
+        "frequency": 10000.0,
+        "node": "\\BOLO1",
+        "sample_num": 210000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "BOLO1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bolov1_106915_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 1068.0,
+        "estimated_total_mib": 122.222900390625,
+        "frequency": 10000.0,
+        "node": "\\BOLOV1",
+        "sample_num": 10680000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "BOLOV1",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_bolov1_150000_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 76.0,
+        "estimated_total_mib": 8.697509765625,
+        "frequency": 10000.0,
+        "node": "\\BOLOV1",
+        "sample_num": 760000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "BOLOV1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_bolov1_90000_t6_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 1.25885009765625,
+        "frequency": 10000.0,
+        "node": "\\BOLOV1",
+        "sample_num": 110000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "BOLOV1",
+        "size_band": "safe_full",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_bp_bc_1dn_50000_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 48.0,
+        "estimated_total_mib": 5.4931640625,
+        "frequency": 10000.0,
+        "node": "\\BP_BC_1DN",
+        "sample_num": 480000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "BP_BC_1DN",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bp_hab_dt_130000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 1.94549560546875,
+        "frequency": 10000.0,
+        "node": "\\BP_HAB_DT",
+        "sample_num": 170000,
+        "server": "202.127.204.12",
+        "shot": 130000,
+        "signal_name": "BP_HAB_DT",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_bp_hab_dt_140000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 19.0,
+        "estimated_total_mib": 2.17437744140625,
+        "frequency": 10000.0,
+        "node": "\\BP_HAB_DT",
+        "sample_num": 190000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "BP_HAB_DT",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bp_hab_dt_147001_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 2.5177001953125,
+        "frequency": 10000.0,
+        "node": "\\BP_HAB_DT",
+        "sample_num": 220000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "BP_HAB_DT",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bp_hab_dt_160030_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 10.0,
+        "estimated_total_mib": 1.1444091796875,
+        "frequency": 10000.0,
+        "node": "\\BP_HAB_DT",
+        "sample_num": 100000,
+        "server": "202.127.204.12",
+        "shot": 160030,
+        "signal_name": "BP_HAB_DT",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bp_hab_dt_165000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 1.94549560546875,
+        "frequency": 10000.0,
+        "node": "\\BP_HAB_DT",
+        "sample_num": 170000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "BP_HAB_DT",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_bp_lab_mt_80000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 9.72747802734375,
+        "frequency": 50000.0,
+        "node": "\\BP_LAB_MT",
+        "sample_num": 850000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "BP_LAB_MT",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ccr1_106915_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 1074.0,
+        "estimated_total_mib": 12.29095458984375,
+        "frequency": 1000.0,
+        "node": "\\CCR1",
+        "sample_num": 1074000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "CCR1",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "A/s"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_ccr1_110003_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 29.0,
+        "estimated_total_mib": 0.331878662109375,
+        "frequency": 1000.0,
+        "node": "\\CCR1",
+        "sample_num": 29000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "CCR1",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "A/s"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_ccr1_120000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 15.0,
+        "estimated_total_mib": 0.171661376953125,
+        "frequency": 1000.0,
+        "node": "\\CCR1",
+        "sample_num": 15000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "CCR1",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "A/s"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_ccr1_150000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 82.0,
+        "estimated_total_mib": 0.93841552734375,
+        "frequency": 1000.0,
+        "node": "\\CCR1",
+        "sample_num": 82000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "CCR1",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "A/s"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_cdg1_70000_t1_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 77.0,
+        "estimated_total_mib": 8.81195068359375,
+        "frequency": 10000.0,
+        "node": "\\CDG1",
+        "sample_num": 770000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "CDG1",
+        "size_band": "safe_full",
+        "subtree": "t1",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_chp6n_165000_t6_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 274.658203125,
+        "frequency": 2000000.0,
+        "node": "\\CHP6N",
+        "sample_num": 24000000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "CHP6N",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_ciiil1_100000_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 18.0,
+        "estimated_total_mib": 10.2996826171875,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 900000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_ciiil1_106915_t5_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 360000,
+        "index_start": 350000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.2,
+        "time_start": 0.0,
+        "time_step": 2e-05
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 1064.0,
+        "estimated_total_mib": 608.82568359375,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 53200000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "CIIIL1",
+        "size_band": "large",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_ciiil1_110003_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 19.0,
+        "estimated_total_mib": 10.87188720703125,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 950000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ciiil1_120000_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 15.0,
+        "estimated_total_mib": 8.58306884765625,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 750000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_ciiil1_130000_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 9.72747802734375,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 850000,
+        "server": "202.127.204.12",
+        "shot": 130000,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ciiil1_140000_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 19.0,
+        "estimated_total_mib": 10.87188720703125,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 950000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_ciiil1_147001_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 12.5885009765625,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 1100000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ciiil1_70000_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 9.72747802734375,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 850000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ciiil1_80000_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 9.72747802734375,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 850000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_ciiil1_90000_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 9.72747802734375,
+        "frequency": 50000.0,
+        "node": "\\CIIIL1",
+        "sample_num": 850000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "CIIIL1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ciiim1_106915_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 1064.0,
+        "estimated_total_mib": 3044.12841796875,
+        "frequency": 250000.0,
+        "node": "\\CIIIM1",
+        "sample_num": 266000000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "CIIIM1",
+        "size_band": "very_large",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_ciiim1_147001_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 62.9425048828125,
+        "frequency": 250000.0,
+        "node": "\\CIIIM1",
+        "sample_num": 5500000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "CIIIM1",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_ciiim1_160030_t6_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 5.0,
+        "estimated_total_mib": 14.30511474609375,
+        "frequency": 250000.0,
+        "node": "\\CIIIM1",
+        "sample_num": 1250000,
+        "server": "202.127.204.12",
+        "shot": 160030,
+        "signal_name": "CIIIM1",
+        "size_band": "safe_full",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cmse_dig1_100000_t7_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 549.31640625,
+        "frequency": 4000000.0,
+        "node": "\\CMSE_DIG1",
+        "sample_num": 48000000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "CMSE_DIG1",
+        "size_band": "large",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_cmse_dig1_110003_t7_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1010000,
+        "index_start": 1000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 148.773193359375,
+        "frequency": 1000000.0,
+        "node": "\\CMSE_DIG1",
+        "sample_num": 13000000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "CMSE_DIG1",
+        "size_band": "window_required",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_cmse_dig1_120000_t7_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1010000,
+        "index_start": 1000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 9.0,
+        "estimated_total_mib": 102.996826171875,
+        "frequency": 1000000.0,
+        "node": "\\CMSE_DIG1",
+        "sample_num": 9000000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "CMSE_DIG1",
+        "size_band": "window_required",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cmse_dig1_130000_t7_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 125.885009765625,
+        "frequency": 1000000.0,
+        "node": "\\CMSE_DIG1",
+        "sample_num": 11000000,
+        "server": "202.127.204.12",
+        "shot": 130000,
+        "signal_name": "CMSE_DIG1",
+        "size_band": "window_required",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cmse_dig1_140000_t7_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1010000,
+        "index_start": 1000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 148.773193359375,
+        "frequency": 1000000.0,
+        "node": "\\CMSE_DIG1",
+        "sample_num": 13000000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "CMSE_DIG1",
+        "size_band": "window_required",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_cmse_dig1_147001_t7_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 16.0,
+        "estimated_total_mib": 183.10546875,
+        "frequency": 1000000.0,
+        "node": "\\CMSE_DIG1",
+        "sample_num": 16000000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "CMSE_DIG1",
+        "size_band": "window_required",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_cmse_dig1_150000_t7_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 66.0,
+        "estimated_total_mib": 755.31005859375,
+        "frequency": 1000000.0,
+        "node": "\\CMSE_DIG1",
+        "sample_num": 66000000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "CMSE_DIG1",
+        "size_band": "large",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_cmse_pll1_120000_t7_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 9.0,
+        "estimated_total_mib": 25.74920654296875,
+        "frequency": 250000.0,
+        "node": "\\CMSE_PLL1",
+        "sample_num": 2250000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "CMSE_PLL1",
+        "size_band": "safe_full",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cmse_pll1_130000_t7_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 31.47125244140625,
+        "frequency": 250000.0,
+        "node": "\\CMSE_PLL1",
+        "sample_num": 2750000,
+        "server": "202.127.204.12",
+        "shot": 130000,
+        "signal_name": "CMSE_PLL1",
+        "size_band": "safe_full",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_cmse_pll1_140000_t7_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 37.19329833984375,
+        "frequency": 250000.0,
+        "node": "\\CMSE_PLL1",
+        "sample_num": 3250000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "CMSE_PLL1",
+        "size_band": "safe_full",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_cmse_pll1_147001_t7_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 16.0,
+        "estimated_total_mib": 45.7763671875,
+        "frequency": 250000.0,
+        "node": "\\CMSE_PLL1",
+        "sample_num": 4000000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "CMSE_PLL1",
+        "size_band": "safe_full",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cmse_pll1_150000_t7_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 66.0,
+        "estimated_total_mib": 188.8275146484375,
+        "frequency": 250000.0,
+        "node": "\\CMSE_PLL1",
+        "sample_num": 16500000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "CMSE_PLL1",
+        "size_band": "window_required",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_co2_1_147001_t2_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1760000,
+        "index_start": 1750000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.04,
+        "time_start": 0.0,
+        "time_step": 4e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 62.9425048828125,
+        "frequency": 250000.0,
+        "node": "\\CO2_1",
+        "sample_num": 5500000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "CO2_1",
+        "size_band": "window_required",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_cs13_50000_t7_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 43.0,
+        "estimated_total_mib": 492.095947265625,
+        "frequency": 1000000.0,
+        "node": "\\CS13",
+        "sample_num": 43000000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "CS13",
+        "size_band": "large",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cxrs1_60001_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 14.8773193359375,
+        "frequency": 100000.0,
+        "node": "\\CXRS1",
+        "sample_num": 1300000,
+        "server": "202.127.204.12",
+        "shot": 60001,
+        "signal_name": "CXRS1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_cxrs1_70000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 19.4549560546875,
+        "frequency": 100000.0,
+        "node": "\\CXRS1",
+        "sample_num": 1700000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "CXRS1",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cxrs1_80000_t7_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 48.63739013671875,
+        "frequency": 250000.0,
+        "node": "\\CXRS1",
+        "sample_num": 4250000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "CXRS1",
+        "size_band": "safe_full",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_cxuv10v_50000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 48.0,
+        "estimated_total_mib": 54.931640625,
+        "frequency": 100000.0,
+        "node": "\\CXUV10V",
+        "sample_num": 4800000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "CXUV10V",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "a.u."
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_cxuv10v_80000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 19.4549560546875,
+        "frequency": 100000.0,
+        "node": "\\CXUV10V",
+        "sample_num": 1700000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "CXUV10V",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "a.u."
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_cxuv10v_90000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 19.4549560546875,
+        "frequency": 100000.0,
+        "node": "\\CXUV10V",
+        "sample_num": 1700000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "CXUV10V",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "a.u."
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_daq_trig_100000_t1_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 18.0,
+        "estimated_total_mib": 10.2996826171875,
+        "frequency": 50000.0,
+        "node": "\\DAQ_TRIG",
+        "sample_num": 900000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "DAQ_TRIG",
+        "size_band": "safe_full",
+        "subtree": "t1",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_daq_trig_80000_t2_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 10000,
+        "index_start": 0,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.2,
+        "time_start": 0.0,
+        "time_step": 2e-05
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 110.0,
+        "estimated_total_mib": 62.9425048828125,
+        "frequency": 50000.0,
+        "node": "\\DAQ_TRIG",
+        "sample_num": 5500000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "DAQ_TRIG",
+        "size_band": "window_required",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -0.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_dgl4_60001_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 14.8773193359375,
+        "frequency": 100000.0,
+        "node": "\\DGL4",
+        "sample_num": 1300000,
+        "server": "202.127.204.12",
+        "shot": 60001,
+        "signal_name": "DGL4",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_divlps06_147001_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 12.5885009765625,
+        "frequency": 50000.0,
+        "node": "\\DIVLPS06",
+        "sample_num": 1100000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "DIVLPS06",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_divlps06_165000_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 6.866455078125,
+        "frequency": 50000.0,
+        "node": "\\DIVLPS06",
+        "sample_num": 600000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "DIVLPS06",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_divlps101_147001_t3_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 62.9425048828125,
+        "frequency": 250000.0,
+        "node": "\\DIVLPS101",
+        "sample_num": 5500000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "DIVLPS101",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_down_i_60001_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 10000,
+        "index_start": 0,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.001,
+        "time_start": 0.0,
+        "time_step": 1e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 6.0,
+        "estimated_total_mib": 686.6455078125,
+        "frequency": 10000000.0,
+        "node": "\\DOWN_I",
+        "sample_num": 60000000,
+        "server": "202.127.204.12",
+        "shot": 60001,
+        "signal_name": "DOWN_I",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -0.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_down_i_70000_t6_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 10.0,
+        "estimated_total_mib": 1144.4091796875,
+        "frequency": 10000000.0,
+        "node": "\\DOWN_I",
+        "sample_num": 100000000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "DOWN_I",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -0.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_down_i_80000_t6_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 10.0,
+        "estimated_total_mib": 1144.4091796875,
+        "frequency": 10000000.0,
+        "node": "\\DOWN_I",
+        "sample_num": 100000000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "DOWN_I",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -0.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_eced1_50000_t2_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1760000,
+        "index_start": 1750000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.04,
+        "time_start": 0.0,
+        "time_step": 4e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 48.0,
+        "estimated_total_mib": 137.3291015625,
+        "frequency": 250000.0,
+        "node": "\\ECED1",
+        "sample_num": 12000000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "ECED1",
+        "size_band": "window_required",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_f901_100000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 28.0,
+        "estimated_total_mib": 3.204345703125,
+        "frequency": 10000.0,
+        "node": "\\F901",
+        "sample_num": 280000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "F901",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_fhp6n_100000_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 2010000,
+        "index_start": 2000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 148.773193359375,
+        "frequency": 1000000.0,
+        "node": "\\FHP6N",
+        "sample_num": 13000000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "FHP6N",
+        "size_band": "window_required",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_fhp6n_110003_t6_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 14.0,
+        "estimated_total_mib": 32.04345703125,
+        "frequency": 200000.0,
+        "node": "\\FHP6N",
+        "sample_num": 2800000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "FHP6N",
+        "size_band": "safe_full",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_fhp6n_140000_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 4010000,
+        "index_start": 4000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.005,
+        "time_start": 0.0,
+        "time_step": 5e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 14.0,
+        "estimated_total_mib": 320.4345703125,
+        "frequency": 2000000.0,
+        "node": "\\FHP6N",
+        "sample_num": 28000000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "FHP6N",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_fhp6n_147001_t6_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 389.09912109375,
+        "frequency": 2000000.0,
+        "node": "\\FHP6N",
+        "sample_num": 34000000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "FHP6N",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_focs1_70000_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 18.0,
+        "estimated_total_mib": 10.2996826171875,
+        "frequency": 50000.0,
+        "node": "\\FOCS1",
+        "sample_num": 900000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "FOCS1",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "A"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_focs_60001_t2_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 14.0,
+        "estimated_total_mib": 8.0108642578125,
+        "frequency": 50000.0,
+        "node": "\\FOCS",
+        "sample_num": 700000,
+        "server": "202.127.204.12",
+        "shot": 60001,
+        "signal_name": "FOCS",
+        "size_band": "safe_full",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "A"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_freq_100000_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 28.0,
+        "estimated_total_mib": 64.0869140625,
+        "frequency": 200000.0,
+        "node": "\\FREQ",
+        "sample_num": 5600000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "FREQ",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_freq_90000_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 77.0,
+        "estimated_total_mib": 176.239013671875,
+        "frequency": 200000.0,
+        "node": "\\FREQ",
+        "sample_num": 15400000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "FREQ",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_gmse_dig1_80000_t7_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 4010000,
+        "index_start": 4000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.0025,
+        "time_start": 0.0,
+        "time_step": 2.5e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 503.5400390625,
+        "frequency": 4000000.0,
+        "node": "\\GMSE_DIG1",
+        "sample_num": 44000000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "GMSE_DIG1",
+        "size_band": "large",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_gmse_dig1_90000_t7_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 4010000,
+        "index_start": 4000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.0025,
+        "time_start": 0.0,
+        "time_step": 2.5e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 503.5400390625,
+        "frequency": 4000000.0,
+        "node": "\\GMSE_DIG1",
+        "sample_num": 44000000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "GMSE_DIG1",
+        "size_band": "large",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_gp0_50000_t4_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 48.0,
+        "estimated_total_mib": 27.4658203125,
+        "frequency": 50000.0,
+        "node": "\\GP0",
+        "sample_num": 2400000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "GP0",
+        "size_band": "safe_full",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_hea1_110003_t4_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 268500,
+        "index_start": 258500,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.02,
+        "time_start": 0.0,
+        "time_step": 2e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 14.0,
+        "estimated_total_mib": 80.108642578125,
+        "frequency": 500000.0,
+        "node": "\\HEA1",
+        "sample_num": 7000000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "HEA1",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.517,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_hea1_70000_t5_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1010000,
+        "index_start": 1000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 21.0,
+        "estimated_total_mib": 240.325927734375,
+        "frequency": 1000000.0,
+        "node": "\\HEA1",
+        "sample_num": 21000000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "HEA1",
+        "size_band": "large",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_hfp_d1_110003_t6_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 148.773193359375,
+        "frequency": 1000000.0,
+        "node": "\\HFP_D1",
+        "sample_num": 13000000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "HFP_D1",
+        "size_band": "window_required",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_hq01_50000_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 48.0,
+        "estimated_total_mib": 27.4658203125,
+        "frequency": 50000.0,
+        "node": "\\HQ01",
+        "sample_num": 2400000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "HQ01",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_hrs01h_100000_t4_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 510000,
+        "index_start": 500000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 137.3291015625,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 12000000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_hrs01h_106915_t4_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 1058.0,
+        "estimated_total_mib": 2421.56982421875,
+        "frequency": 200000.0,
+        "node": "\\HRS01H",
+        "sample_num": 211600000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "HRS01H",
+        "size_band": "very_large",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_hrs01h_120000_t4_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 510000,
+        "index_start": 500000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 26.0,
+        "estimated_total_mib": 297.54638671875,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 26000000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "HRS01H",
+        "size_band": "large",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_hrs01h_130000_t4_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 125.885009765625,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 11000000,
+        "server": "202.127.204.12",
+        "shot": 130000,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_hrs01h_140000_t4_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 13.0,
+        "estimated_total_mib": 148.773193359375,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 13000000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_hrs01h_147001_t4_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 16.0,
+        "estimated_total_mib": 183.10546875,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 16000000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_hrs01h_150000_t4_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 510000,
+        "index_start": 500000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 66.0,
+        "estimated_total_mib": 755.31005859375,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 66000000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "HRS01H",
+        "size_band": "large",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_hrs01h_165000_t4_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 510000,
+        "index_start": 500000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 125.885009765625,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 11000000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_hrs01h_70000_t5_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 510000,
+        "index_start": 500000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 125.885009765625,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 11000000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_hrs01h_80000_t5_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 510000,
+        "index_start": 500000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 125.885009765625,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 11000000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_hrs01h_90000_t4_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 125.885009765625,
+        "frequency": 1000000.0,
+        "node": "\\HRS01H",
+        "sample_num": 11000000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "HRS01H",
+        "size_band": "window_required",
+        "subtree": "t4",
+        "tree": "east",
+        "trigtime": -0.5,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_idc1_rmp1_50000_t1_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 48.0,
+        "estimated_total_mib": 10.986328125,
+        "frequency": 20000.0,
+        "node": "\\IDC1_RMP1",
+        "sample_num": 960000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "IDC1_RMP1",
+        "size_band": "safe_full",
+        "subtree": "t1",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "A"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_jxuv01_120000_t5_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1410000,
+        "index_start": 1400000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.05,
+        "time_start": 0.0,
+        "time_step": 5e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 32.0,
+        "estimated_total_mib": 73.2421875,
+        "frequency": 200000.0,
+        "node": "\\JXUV01",
+        "sample_num": 6400000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "JXUV01",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_jxuv01_140000_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 19.0,
+        "estimated_total_mib": 217.437744140625,
+        "frequency": 1000000.0,
+        "node": "\\JXUV01",
+        "sample_num": 19000000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "JXUV01",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_jxuv01_147001_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 251.77001953125,
+        "frequency": 1000000.0,
+        "node": "\\JXUV01",
+        "sample_num": 22000000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "JXUV01",
+        "size_band": "large",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_jxuv01_150000_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 72.0,
+        "estimated_total_mib": 823.974609375,
+        "frequency": 1000000.0,
+        "node": "\\JXUV01",
+        "sample_num": 72000000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "JXUV01",
+        "size_band": "large",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_khp1n_50000_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 2010000,
+        "index_start": 2000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 43.0,
+        "estimated_total_mib": 492.095947265625,
+        "frequency": 1000000.0,
+        "node": "\\KHP1N",
+        "sample_num": 43000000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "KHP1N",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_khp6n_60001_t5_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 2010000,
+        "index_start": 2000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 8.0,
+        "estimated_total_mib": 91.552734375,
+        "frequency": 1000000.0,
+        "node": "\\KHP6N",
+        "sample_num": 8000000,
+        "server": "202.127.204.12",
+        "shot": 60001,
+        "signal_name": "KHP6N",
+        "size_band": "window_required",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_khp6n_80000_t5_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 274.658203125,
+        "frequency": 2000000.0,
+        "node": "\\KHP6N",
+        "sample_num": 24000000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "KHP6N",
+        "size_band": "large",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_khp6n_90000_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 2010000,
+        "index_start": 2000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 137.3291015625,
+        "frequency": 1000000.0,
+        "node": "\\KHP6N",
+        "sample_num": 12000000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "KHP6N",
+        "size_band": "window_required",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_lp1_106915_t6_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 1058.0,
+        "estimated_total_mib": 12107.84912109375,
+        "frequency": 1000000.0,
+        "node": "\\LP1",
+        "sample_num": 1058000000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "LP1",
+        "size_band": "very_large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_lvic1_150000_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1410000,
+        "index_start": 1400000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.05,
+        "time_start": 0.0,
+        "time_step": 5e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 72.0,
+        "estimated_total_mib": 164.794921875,
+        "frequency": 200000.0,
+        "node": "\\LVIC1",
+        "sample_num": 14400000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "LVIC1",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_lvic1_160030_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 7010000,
+        "index_start": 7000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 10.0,
+        "estimated_total_mib": 114.44091796875,
+        "frequency": 1000000.0,
+        "node": "\\LVIC1",
+        "sample_num": 10000000,
+        "server": "202.127.204.12",
+        "shot": 160030,
+        "signal_name": "LVIC1",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_lvic1_165000_t3_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 194.549560546875,
+        "frequency": 1000000.0,
+        "node": "\\LVIC1",
+        "sample_num": 17000000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "LVIC1",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_na1_106915_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 1069.0,
+        "estimated_total_mib": 0.02446746826171875,
+        "frequency": 2.0,
+        "node": "\\NA1",
+        "sample_num": 2138,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "NA1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_pem20_60001_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1010000,
+        "index_start": 1000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 7.0,
+        "estimated_total_mib": 80.108642578125,
+        "frequency": 1000000.0,
+        "node": "\\PEM20",
+        "sample_num": 7000000,
+        "server": "202.127.204.12",
+        "shot": 60001,
+        "signal_name": "PEM20",
+        "size_band": "window_required",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_pem20_70000_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1010000,
+        "index_start": 1000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 11.0,
+        "estimated_total_mib": 125.885009765625,
+        "frequency": 1000000.0,
+        "node": "\\PEM20",
+        "sample_num": 11000000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "PEM20",
+        "size_band": "window_required",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_plm23p_100000_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 2010000,
+        "index_start": 2000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.005,
+        "time_start": 0.0,
+        "time_step": 5e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 274.658203125,
+        "frequency": 2000000.0,
+        "node": "\\PLM23P",
+        "sample_num": 24000000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "PLM23P",
+        "size_band": "large",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -1.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_pn1_60001_t5_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 8.0,
+        "estimated_total_mib": 9.1552734375,
+        "frequency": 100000.0,
+        "node": "\\PN1",
+        "sample_num": 800000,
+        "server": "202.127.204.12",
+        "shot": 60001,
+        "signal_name": "PN1",
+        "size_band": "safe_full",
+        "subtree": "t5",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_point0_50000_t7_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 20010000,
+        "index_start": 20000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.001,
+        "time_start": 0.0,
+        "time_step": 1e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 43.0,
+        "estimated_total_mib": 4920.95947265625,
+        "frequency": 10000000.0,
+        "node": "\\POINT0",
+        "sample_num": 430000000,
+        "server": "202.127.204.12",
+        "shot": 50000,
+        "signal_name": "POINT0",
+        "size_band": "very_large",
+        "subtree": "t7",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_point0_70000_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 20010000,
+        "index_start": 20000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.001,
+        "time_start": 0.0,
+        "time_step": 1e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 1373.291015625,
+        "frequency": 10000000.0,
+        "node": "\\POINT0",
+        "sample_num": 120000000,
+        "server": "202.127.204.12",
+        "shot": 70000,
+        "signal_name": "POINT0",
+        "size_band": "very_large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_point0_80000_t6_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 20010000,
+        "index_start": 20000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.001,
+        "time_start": 0.0,
+        "time_step": 1e-07
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 1373.291015625,
+        "frequency": 10000000.0,
+        "node": "\\POINT0",
+        "sample_num": 120000000,
+        "server": "202.127.204.12",
+        "shot": 80000,
+        "signal_name": "POINT0",
+        "size_band": "very_large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_rxc10a_100000_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 18.0,
+        "estimated_total_mib": 41.19873046875,
+        "frequency": 200000.0,
+        "node": "\\RXC10A",
+        "sample_num": 3600000,
+        "server": "202.127.204.12",
+        "shot": 100000,
+        "signal_name": "RXC10A",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_rxc10a_106915_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 1410000,
+        "index_start": 1400000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.05,
+        "time_start": 0.0,
+        "time_step": 5e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 1064.0,
+        "estimated_total_mib": 2435.302734375,
+        "frequency": 200000.0,
+        "node": "\\RXC10A",
+        "sample_num": 212800000,
+        "server": "202.127.204.12",
+        "shot": 106915,
+        "signal_name": "RXC10A",
+        "size_band": "very_large",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_rxc10a_110003_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 19.0,
+        "estimated_total_mib": 43.487548828125,
+        "frequency": 200000.0,
+        "node": "\\RXC10A",
+        "sample_num": 3800000,
+        "server": "202.127.204.12",
+        "shot": 110003,
+        "signal_name": "RXC10A",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_rxc10a_120000_t3_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 32.0,
+        "estimated_total_mib": 366.2109375,
+        "frequency": 1000000.0,
+        "node": "\\RXC10A",
+        "sample_num": 32000000,
+        "server": "202.127.204.12",
+        "shot": 120000,
+        "signal_name": "RXC10A",
+        "size_band": "large",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_rxc10a_130000_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 7010000,
+        "index_start": 7000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 17.0,
+        "estimated_total_mib": 194.549560546875,
+        "frequency": 1000000.0,
+        "node": "\\RXC10A",
+        "sample_num": 17000000,
+        "server": "202.127.204.12",
+        "shot": 130000,
+        "signal_name": "RXC10A",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_rxc10a_140000_t3_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 19.0,
+        "estimated_total_mib": 217.437744140625,
+        "frequency": 1000000.0,
+        "node": "\\RXC10A",
+        "sample_num": 19000000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "RXC10A",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_rxc10a_147001_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 7010000,
+        "index_start": 7000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 22.0,
+        "estimated_total_mib": 251.77001953125,
+        "frequency": 1000000.0,
+        "node": "\\RXC10A",
+        "sample_num": 22000000,
+        "server": "202.127.204.12",
+        "shot": 147001,
+        "signal_name": "RXC10A",
+        "size_band": "large",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "semantic_request",
+      "id": "east_rxc10a_150000_t3_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "requires_domain_description",
+      "target": {
+        "daqtime": 72.0,
+        "estimated_total_mib": 823.974609375,
+        "frequency": 1000000.0,
+        "node": "\\RXC10A",
+        "sample_num": 72000000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "RXC10A",
+        "size_band": "large",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_s675i_90000_t6_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 10.0,
+        "estimated_total_mib": 1144.4091796875,
+        "frequency": 10000000.0,
+        "node": "\\S675I",
+        "sample_num": 100000000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "S675I",
+        "size_band": "large",
+        "subtree": "t6",
+        "tree": "east",
+        "trigtime": -0.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_setc0_140000_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 19.0,
+        "estimated_total_mib": 4.3487548828125,
+        "frequency": 20000.0,
+        "node": "\\SETC0",
+        "sample_num": 380000,
+        "server": "202.127.204.12",
+        "shot": 140000,
+        "signal_name": "SETC0",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_setc0_150000_t3_full_retrieval",
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "operation_kind": "full_retrieval",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 72.0,
+        "estimated_total_mib": 16.4794921875,
+        "frequency": 20000.0,
+        "node": "\\SETC0",
+        "sample_num": 1440000,
+        "server": "202.127.204.12",
+        "shot": 150000,
+        "signal_name": "SETC0",
+        "size_band": "safe_full",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -7.0,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "explicit_target",
+      "id": "east_ssnpa01p_165000_t2_metadata_preflight",
+      "operation": {
+        "expected_decision": "limit_time_window_or_downsample",
+        "kind": "metadata_preflight",
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "must_not_load_full_signal": true
+      },
+      "operation_kind": "metadata_preflight",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 10.0,
+        "estimated_total_mib": 228.8818359375,
+        "frequency": 2000000.0,
+        "node": "\\SSNPA01P",
+        "sample_num": 20000000,
+        "server": "202.127.204.12",
+        "shot": 165000,
+        "signal_name": "SSNPA01P",
+        "size_band": "window_required",
+        "subtree": "t2",
+        "tree": "east",
+        "trigtime": -0.01,
+        "unit": "V"
+      }
+    },
+    {
+      "grounding_level": "subtree_hidden",
+      "id": "east_sxr10f_90000_t3_index_window",
+      "operation": {
+        "expected_points": 10001,
+        "index_end": 2010000,
+        "index_start": 2000000,
+        "kind": "index_window",
+        "requires_time_axis": true,
+        "time_end": 0.01,
+        "time_start": 0.0,
+        "time_step": 1e-06
+      },
+      "operation_kind": "index_window",
+      "oracle_stage": "target_validated_final_reference_pending",
+      "prompt_status": "ready_for_template_generation",
+      "target": {
+        "daqtime": 12.0,
+        "estimated_total_mib": 137.3291015625,
+        "frequency": 1000000.0,
+        "node": "\\SXR10F",
+        "sample_num": 12000000,
+        "server": "202.127.204.12",
+        "shot": 90000,
+        "signal_name": "SXR10F",
+        "size_band": "window_required",
+        "subtree": "t3",
+        "tree": "east",
+        "trigtime": -2.0,
+        "unit": "V"
+      }
+    }
+  ]
+}

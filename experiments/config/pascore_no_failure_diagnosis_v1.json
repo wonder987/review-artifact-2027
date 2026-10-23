@@ -1,0 +1,9 @@
+{
+  "condition_id": "no_failure_diagnosis",
+  "failure_diagnosis": "raw_only",
+  "max_repair_rounds": 2,
+  "metadata_grounding": true,
+  "resource_guard": true,
+  "schema_version": "1.0",
+  "structured_feedback": true
+}

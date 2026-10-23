@@ -1,0 +1,14 @@
+{
+  "models": {
+    "model-a": {
+      "api_key_env": "PROVIDER_A_API_KEY",
+      "base_url": "https://provider-a.example/v1",
+      "max_tokens_parameter": "max_tokens",
+      "model": "replace-with-model-id",
+      "provider": "provider-a",
+      "supports_temperature": true,
+      "transport": "curl"
+    }
+  },
+  "schema_version": "1.0"
+}

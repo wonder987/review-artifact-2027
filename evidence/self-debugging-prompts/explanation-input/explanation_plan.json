@@ -1,0 +1,169 @@
+{
+  "entries": [
+    {
+      "parent_program_hash": "4d4a40b928d7d6d9fdddfc6a10ce9ce7812c09a225ffd87c118723690469c4c7",
+      "prompt_sha256": "9fb4d23c20f9b880b107b201307ff922482ba353d5d60be876beea3222206877",
+      "task_id": "gold138_l1_018"
+    },
+    {
+      "parent_program_hash": "c8ffb881fcf6261954c78137af0900b5dc8bb59f9f6ef59a408dc11423a14cbc",
+      "prompt_sha256": "21c11c492080679388e6609b252307f69ded34c53d9061633760bf468eb55746",
+      "task_id": "gold138_l2_001"
+    },
+    {
+      "parent_program_hash": "514cd287fe21f0823a779c2028b457a34a8f25af5656a34c8dd1164d3111487c",
+      "prompt_sha256": "66a6d0fc41ffa8fc5dad2213b347cdbe451b538623c7dbee0d1920c4dc9167af",
+      "task_id": "gold138_l2_005"
+    },
+    {
+      "parent_program_hash": "8088c85dd6e1c87e07fb0511c945ec7875b4ce26be587cfea5f3d1b6b2945849",
+      "prompt_sha256": "6cebfccac39d264a9c3750dc1ac6cc0bffe3f89c2fd7b3da794df427351011a4",
+      "task_id": "gold138_l2_008"
+    },
+    {
+      "parent_program_hash": "caa3806c9f9e76252707c08d3151d6225d6bc9a32cc1fa97de42090303d9c6b9",
+      "prompt_sha256": "e70066a4641b298d916b6a8e9ff4af5229b7cd76d5d304b0163c7055f5a1cf23",
+      "task_id": "gold138_l2_009"
+    },
+    {
+      "parent_program_hash": "14b06f9d937c78f521404441939cece9a549a5d36c9a245ca75b00ead9fd30e4",
+      "prompt_sha256": "2ab20c99ae5e71cf092ae3ac930f56cce18048cb8457ec2d76d9e6622d17d9a0",
+      "task_id": "gold138_l2_012"
+    },
+    {
+      "parent_program_hash": "9ee5bc1584c374ffb8eaee5cab7aa783f28a0fcf0b9edec14bbb4627123edaf8",
+      "prompt_sha256": "d11d11344a5d1db5442ecb9e191286b6cb16eff1cc325c11ac4bde547e07a37c",
+      "task_id": "gold138_l2_024"
+    },
+    {
+      "parent_program_hash": "3f36ab2b7c38f998f574527875d146826022ff212bea4be3a682235477be2b4f",
+      "prompt_sha256": "f91b5484fbaf49124d178579ad3677ad6d37e20f969553025aed9801d83fbe76",
+      "task_id": "gold138_l2_026"
+    },
+    {
+      "parent_program_hash": "dedd4aed65e6c22801124350498bea097c03b5379995d53cc4724dcf9cd269fa",
+      "prompt_sha256": "b35ac1f73aeddfd90f7cdc0951cc5dbacf67e8711dc8354d3f612980017f19bc",
+      "task_id": "gold138_l2_044"
+    },
+    {
+      "parent_program_hash": "d5237d57c6994f391838a60ebe097344a95008e6070721a444ff026cbf82a1d6",
+      "prompt_sha256": "d702769259c394f073e391a57664b84419111e023cfb9cb02dd49efa1e95a547",
+      "task_id": "gold138_l3_004"
+    },
+    {
+      "parent_program_hash": "d92a02642c24598bd8cca7687f3b0e4d1cc4e9f0d573e5c866bb295fad13d55d",
+      "prompt_sha256": "156626a12436fe2101d3808c4793a88d2b01e954f4f511c34804bb8e5707797b",
+      "task_id": "gold138_l3_005"
+    },
+    {
+      "parent_program_hash": "3862e678c3aed109391ea94433dc898ca888c683f28feb6666bcd081d276be5e",
+      "prompt_sha256": "e4748c681f5435b0d78746c5977e05f738febcb19f84f6da553247d0385060e6",
+      "task_id": "gold138_l3_006"
+    },
+    {
+      "parent_program_hash": "6a3f5e367ee6c1ff063b35f658dc1c0abd5b938ea9550ae5964832563c89a2c8",
+      "prompt_sha256": "c08acca83b53bf383e847ed178e6e7e617eeb745050e0e6d60e861cbd0839109",
+      "task_id": "gold138_l3_021"
+    },
+    {
+      "parent_program_hash": "72949f7f3c32571d8f3dccdbc0edb17f809124c7403d6f8125141085cea4678d",
+      "prompt_sha256": "1a22e8a1fbcb5edfe04f5d890e82cd624ed1b1febf6ff911014b8f16e29761a1",
+      "task_id": "gold138_l3_022"
+    },
+    {
+      "parent_program_hash": "abe1234522b7398e81c124930c973897aa05f67bacc24c28af3bf5ba3c66b56f",
+      "prompt_sha256": "97c0e45cca2fb8b4c4212c2ec853028f04972e2158b9cd779f123c086caa4a57",
+      "task_id": "gold138_l3_024"
+    },
+    {
+      "parent_program_hash": "8f70e6596044b182cb10386ff288d4086bb8af34a9eb93433b5fd9e04eeeb8f6",
+      "prompt_sha256": "5c1583d27ff5c7386ceefa79939a748af862f9d600f4751c0721ce993ae6ff21",
+      "task_id": "gold138_l3_025"
+    },
+    {
+      "parent_program_hash": "560342acbda47587e907ebcd7c7ba29c71ec181246be5c887a3de553ebc98c65",
+      "prompt_sha256": "3e6049f2f11436a83d80bd34168ede47f92a25104134075619f85b7e4f08304d",
+      "task_id": "gold138_l3_027"
+    },
+    {
+      "parent_program_hash": "be8573d2a9ba776162aa8f9beef16a83da7a58da9473c9bbef528ec530ad95a2",
+      "prompt_sha256": "8142afb72695374e6619986bd517225e7abc658f1573e353fff7b49926267655",
+      "task_id": "gold138_l3_029"
+    },
+    {
+      "parent_program_hash": "0bfee75a6dd28743cd2e1775c4176dcb8b2eba7fc028eb135b53c2c6a07d3f62",
+      "prompt_sha256": "8b3b71e40949113e3fd0d08bd4a78f85724f572b7981abf2b8a4d8c3b5f84c05",
+      "task_id": "gold138_l3_030"
+    },
+    {
+      "parent_program_hash": "d60e945e042145134c70311d889d6620e93d72aea0857728b4e86422177c04de",
+      "prompt_sha256": "3971a858c789b43c45c4c1f661eb4482da3df04b2ac695915a6f0e3962bf83b4",
+      "task_id": "gold138_l3_032"
+    },
+    {
+      "parent_program_hash": "430cd1ebd30db4faf2e00e3b56dcad8ee43e8caa26cbeb480215cb9aeb825ed8",
+      "prompt_sha256": "b8a9a5ecd1efe5a39cb72df089462446083b0d45ab413d425c8c1dd10125e90e",
+      "task_id": "gold138_l3_033"
+    },
+    {
+      "parent_program_hash": "3a831ff54021c3c63cb8c265ca65e2c2a8fee62fe00c5a772fcffe84e7386b60",
+      "prompt_sha256": "732bf4741ad66366d9ae2a053bdaf7adac4eb9a1848f8d22e6127c44654a49fd",
+      "task_id": "gold138_l3_034"
+    },
+    {
+      "parent_program_hash": "b069bb6a12c5055bbf1a38cab7b1e0b556e7c01e5381f9f2088f501957f274dd",
+      "prompt_sha256": "0a9a1ace5268e01451bfaf89f418e2b80615fc627f1b0c26b94ba4a6669e9277",
+      "task_id": "gold138_l3_035"
+    },
+    {
+      "parent_program_hash": "ad924170f0d3a5402303be47b66769a8c16a40caffbb68634cf4eae8e7b69f43",
+      "prompt_sha256": "a6f5bb17168194b4db3f6e40a92eaa16306476c354b36d654e74e07830a92d49",
+      "task_id": "gold138_l3_036"
+    },
+    {
+      "parent_program_hash": "a2c12aa4c3d13aa4e4174d7a84956179efe4449e6e755245788527888483c4c2",
+      "prompt_sha256": "a263f6805034013cfd209798de5a3caab9f491b7f9e5315eeb6b40d4105eeb1e",
+      "task_id": "gold138_l3_041"
+    },
+    {
+      "parent_program_hash": "38b53c7145852eece7a331e80743bac7802c3a481099f77a9b2a467c833767de",
+      "prompt_sha256": "f7972c9da99bdc430c640a61faf7e613e9b0bf8654ed17600e15b88525a9e06d",
+      "task_id": "gold138_l3_042"
+    },
+    {
+      "parent_program_hash": "7aab034403fc1a1a09b7de57625e11bcfd2f09063646e1c27cb011891b8d8d5f",
+      "prompt_sha256": "393546ba5c32d0dac7ae85a21202fe6abf94f8519a6ff0da942ba298e57bd763",
+      "task_id": "gold138_l3_044"
+    },
+    {
+      "parent_program_hash": "779eb2c02399671ddaf5134dc4081191d6ad812970c3df88e8cb6b9e1d2557fe",
+      "prompt_sha256": "cf52d04d448bec281e2d05b204fdd55706cbb79e321f3e107f69b61d0fa2bc28",
+      "task_id": "gold138_l3_046"
+    },
+    {
+      "parent_program_hash": "dc098da0b52fd228edae5087642cca8c9e4ccda47ea9f281880d18f61baf6557",
+      "prompt_sha256": "ce04d1cff2286d5a996ec8bae055996c0f411b5d42949e7bb758893fd4f15a22",
+      "task_id": "gold138_l3_047"
+    },
+    {
+      "parent_program_hash": "70d2f8842f8313f789e348c94ca1ce6a1826787a04cb35428f4098f14e9245d3",
+      "prompt_sha256": "873ca36e3754cd783bdaae5bd42b00875fad7be5dcb33b3acded80466499ff4d",
+      "task_id": "gold138_l3_052"
+    },
+    {
+      "parent_program_hash": "279c52bacbe80747796bf57bb224fe2ca9e694dd4ffc943d238f9b0fbcc36236",
+      "prompt_sha256": "3006c907c2bf0e3c558d5575b2ac4b156106ec0a07e1fb25a30c14d6c4d39f3c",
+      "task_id": "gold138_l3_054"
+    },
+    {
+      "parent_program_hash": "c0b05dbe870af1426c8ee48ea3da54b773242150d5587d5dde7d7247a2a5ddf1",
+      "prompt_sha256": "a1ad46cf4009d77837e71b5b655fc427c469de7049cad7e4f4aedb8daeeae7ac",
+      "task_id": "gold138_l3_055"
+    }
+  ],
+  "entry_count": 32,
+  "model_alias": "qwen3.8-chat",
+  "prompt_version": "self-debugging-explanation-v1",
+  "schema_version": "1.0",
+  "stage": "explanation"
+}

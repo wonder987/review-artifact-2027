@@ -1,0 +1,565 @@
+{
+  "created_utc": "2026-09-22T04:54:13Z",
+  "held_out_count": 108,
+  "pilot_count": 30,
+  "primary_jsonl_sha256": "8a18fa1ea48b24a8f5a98d095187f55003460de7d8c0a8576d4717d4c99855cd",
+  "prompt_version": "primary-zero-shot-v1",
+  "prompts": [
+    {
+      "prompt_sha256": "208a3e47315983066bd7188085d1ebff47ad4d8c58a5b920f28864694520b3d0",
+      "task_id": "gold138_l1_001"
+    },
+    {
+      "prompt_sha256": "7190d51fc8ad1e76123394fa6eaaf98f721d97210ce72d2783a80e6500a06b03",
+      "task_id": "gold138_l1_002"
+    },
+    {
+      "prompt_sha256": "9876352f6997a070a0270da53e7d29959873caee13497a09de251630733bc586",
+      "task_id": "gold138_l1_003"
+    },
+    {
+      "prompt_sha256": "99bb65b0de2ba6ea610ef3433890a2beb3b4078417bb2bcf450fb95a56d2f753",
+      "task_id": "gold138_l1_004"
+    },
+    {
+      "prompt_sha256": "e5cb2189135d65d562cf96ca2755aba69c52a08cacab4bfd83a3b43671fbe3f2",
+      "task_id": "gold138_l1_005"
+    },
+    {
+      "prompt_sha256": "cc92126cf370d19c2268baf5b8daea40c9af315c6a00b36733443976aaaf516c",
+      "task_id": "gold138_l1_006"
+    },
+    {
+      "prompt_sha256": "4e3aa134574fb695f55e07cf196b451b42e3eec03c7d1e9a84c05916b6594f67",
+      "task_id": "gold138_l1_007"
+    },
+    {
+      "prompt_sha256": "495b2d14f8ecbfcf00263cf2927ab6e2c8d5ee61c175fe81bfc934c622906827",
+      "task_id": "gold138_l1_008"
+    },
+    {
+      "prompt_sha256": "d4f540e1992f9e45263f616f5f32be5f2a4b6897102f1bcffb5c99bcab4245b4",
+      "task_id": "gold138_l1_009"
+    },
+    {
+      "prompt_sha256": "cec00fb94347bb61661526f49f015b5ffd9e9f5e8a976ed66cc91a462b5ffd96",
+      "task_id": "gold138_l1_010"
+    },
+    {
+      "prompt_sha256": "8a79b75ad4ae8f321728ca18e67142899fa5458072365606294fbfbd7ee9b33b",
+      "task_id": "gold138_l1_011"
+    },
+    {
+      "prompt_sha256": "06605046818190b63767a66675e4d8c1a8a733b04dfc4d646a7d44fa378131a0",
+      "task_id": "gold138_l1_012"
+    },
+    {
+      "prompt_sha256": "3258cb29bfe5277d72439c0d46abc48ca6318e6cfa5cdda2fbe240d895c38072",
+      "task_id": "gold138_l1_013"
+    },
+    {
+      "prompt_sha256": "2fa8ed7a0e5bd8a79105195bba69349d52e4576349b75a0bd4561d25678d4844",
+      "task_id": "gold138_l1_014"
+    },
+    {
+      "prompt_sha256": "2b609066e43b57a3c2e271ccbdc066866dd619b2da0f2c39b6fad33169cbcf2a",
+      "task_id": "gold138_l1_015"
+    },
+    {
+      "prompt_sha256": "34c916b43527c56003630391f92488f293338887b994f46591ce65ef623b284e",
+      "task_id": "gold138_l1_016"
+    },
+    {
+      "prompt_sha256": "5fbf145aeed26fef1448135ee5c24ce6d0c4eb3daf1d30ab57ccc45afa1ada31",
+      "task_id": "gold138_l1_017"
+    },
+    {
+      "prompt_sha256": "2ed637d3d461f97defe2e411de777aef57303adabf060dd1110b28841fb010ea",
+      "task_id": "gold138_l1_018"
+    },
+    {
+      "prompt_sha256": "683e6e76dc568c1d2dcfd59f0daadb87ba2bd2570e6b2761cbb22c09700fe059",
+      "task_id": "gold138_l1_019"
+    },
+    {
+      "prompt_sha256": "be199b33c471d6913416f79186e07125844c4fdc84b6534e15ba6650c37b7990",
+      "task_id": "gold138_l1_020"
+    },
+    {
+      "prompt_sha256": "a5013158543dc18ca520c7c0d196d8de10685df66950fa2b9fa3f84c91bf5987",
+      "task_id": "gold138_l1_021"
+    },
+    {
+      "prompt_sha256": "80e461cee759152c43d4db91c7deb1f590f6e63d4b8e9580a0beb644fe1c28a8",
+      "task_id": "gold138_l1_022"
+    },
+    {
+      "prompt_sha256": "ddd4e9379c07b28312ab8d0ae10203d7589e114906b911c56952e9ceda00d803",
+      "task_id": "gold138_l1_023"
+    },
+    {
+      "prompt_sha256": "d60a513eeaeb1a6401c248fd66d7f389c713d546069a0f3035661baf76afe6bf",
+      "task_id": "gold138_l1_024"
+    },
+    {
+      "prompt_sha256": "e7d733f23ddcc74d6da9c6d75240250f07ddfdd82a4ca6c11a35175ca74e4d4a",
+      "task_id": "gold138_l1_025"
+    },
+    {
+      "prompt_sha256": "153a42a5822f8630d21c9d62e3cd74fcab6ebee1aa8545ce65159c49894e7f8e",
+      "task_id": "gold138_l1_026"
+    },
+    {
+      "prompt_sha256": "9731f9c4a8206663cceafdc26935ddca38f567c59ecec08bc5aead49aee08b16",
+      "task_id": "gold138_l1_027"
+    },
+    {
+      "prompt_sha256": "99b3451938ef9ba4e722ff04d63d329ac8c377701d6a3c48b6130c0ab79737f4",
+      "task_id": "gold138_l1_028"
+    },
+    {
+      "prompt_sha256": "62c02f985ec9956b8f6beecad00113adb9907d6a1c096c6970585e8a6892bbc2",
+      "task_id": "gold138_l1_029"
+    },
+    {
+      "prompt_sha256": "0469f7d2ae349453fff875e382d0b5d17543c24306da823fafceeff079b33e8d",
+      "task_id": "gold138_l1_030"
+    },
+    {
+      "prompt_sha256": "c46013d6c41dbb5ec69a3d29ec24a4182ceb33045c8d812cdf7332d95bb5c201",
+      "task_id": "gold138_l2_001"
+    },
+    {
+      "prompt_sha256": "0a94da45b5f9e2ab28c41f2268870d0f857fc7cf11bf54a697ae5379a0cab202",
+      "task_id": "gold138_l2_002"
+    },
+    {
+      "prompt_sha256": "142ba310b6e9bc559ee7137575b7eea81b02c59cebe7701050bf1be76e810625",
+      "task_id": "gold138_l2_003"
+    },
+    {
+      "prompt_sha256": "845e358ecd175a62c2f7f7c37427f7fc6e563af557058b1c6fa4d0726daf5971",
+      "task_id": "gold138_l2_004"
+    },
+    {
+      "prompt_sha256": "c37292a53144362ccaa6b6357399f521d3a5a19c0a1672011dadf98372090490",
+      "task_id": "gold138_l2_005"
+    },
+    {
+      "prompt_sha256": "69ef982058c6402e52440b652b2b1e0c90d1b01e3391faafea577223e5d2f656",
+      "task_id": "gold138_l2_006"
+    },
+    {
+      "prompt_sha256": "5e2548f03493a5dbd6ef5b4c1543165369696944242f3cb077fac48554b5ecdf",
+      "task_id": "gold138_l2_007"
+    },
+    {
+      "prompt_sha256": "d0fa7dcbebecd3d0867ca499c461d864f911a8176352e436b503b64f884ec17e",
+      "task_id": "gold138_l2_008"
+    },
+    {
+      "prompt_sha256": "aa19b90188b2fb50803bd7225885cc068eb48aba1ba7dbc18f9fa8e26f481c82",
+      "task_id": "gold138_l2_009"
+    },
+    {
+      "prompt_sha256": "95e7b97c42f0872d136ec1a31eaf90d6602901f8ed6ed859bf0dfa7f3ab12280",
+      "task_id": "gold138_l2_010"
+    },
+    {
+      "prompt_sha256": "a657488dd16218805cd7e9732bd0bb91831e9519f05cc7b8203669d63fc46777",
+      "task_id": "gold138_l2_011"
+    },
+    {
+      "prompt_sha256": "8915b6653b60fc66d37948b3baba525bc1ff9a2c779f5ddc21faa3058572e926",
+      "task_id": "gold138_l2_012"
+    },
+    {
+      "prompt_sha256": "2082d874052b41a1081037c71d8eec6b2d771646bb9682638766fc8271f6d3c3",
+      "task_id": "gold138_l2_013"
+    },
+    {
+      "prompt_sha256": "d5a13770a6b2c312ee12d51df6e38b84d0bf2bf3ec46246d160bfd8e3635ea57",
+      "task_id": "gold138_l2_014"
+    },
+    {
+      "prompt_sha256": "a5caf673be14dd7280396a18cebb9613f3c3dcd5e918ad428fb3222d62823aa5",
+      "task_id": "gold138_l2_015"
+    },
+    {
+      "prompt_sha256": "1d35c6db5d7b9591e1e034693763a450f58840e44a0e36d02d9a312e06726ee4",
+      "task_id": "gold138_l2_016"
+    },
+    {
+      "prompt_sha256": "0de9a3980bd30faef8d861b57b3b8ca508c423dbfcb1a1b27a7f212b9ccb3647",
+      "task_id": "gold138_l2_017"
+    },
+    {
+      "prompt_sha256": "517a23af27582079491ef7488c801e8cdecdabd2981fca55fee4f0092471fcb0",
+      "task_id": "gold138_l2_018"
+    },
+    {
+      "prompt_sha256": "5760436069f9b172a83290c8f8be305d083a9dc316c3d400b701295210d9e654",
+      "task_id": "gold138_l2_019"
+    },
+    {
+      "prompt_sha256": "8d6ea696b92a43b11b94fa1e26815d2207ddc17de9093a5fc86cbf57e8c2ed97",
+      "task_id": "gold138_l2_020"
+    },
+    {
+      "prompt_sha256": "63ac50e3c488c99f43ac8315c7d55f664dc40a00fdbc3ce21fcdf3175b087800",
+      "task_id": "gold138_l2_021"
+    },
+    {
+      "prompt_sha256": "a8bf4832dfc4eb5fd6f44d1a45761905b41015f0f90b65eec2b12df93894e12d",
+      "task_id": "gold138_l2_022"
+    },
+    {
+      "prompt_sha256": "2167f38961bc24d71ddecde00df97773962ab68d81c8d0b804deedd64f075fe2",
+      "task_id": "gold138_l2_023"
+    },
+    {
+      "prompt_sha256": "1bed84e60fcec045f1dbc03b4a40e22ab527cccad95fcc9da6a7a93a22803b8f",
+      "task_id": "gold138_l2_024"
+    },
+    {
+      "prompt_sha256": "d96562d9487e0d2c90f5e012d2e4fc58ee61f1e3548438a38ba38d825a0f05dc",
+      "task_id": "gold138_l2_025"
+    },
+    {
+      "prompt_sha256": "d5c375e4eab6896bf6d0567cc3edf8578081238b1aae04a704392d3b50f2a5cd",
+      "task_id": "gold138_l2_026"
+    },
+    {
+      "prompt_sha256": "f8119ab47206a41539b35c1d6c1f51ddb1e465fccf05cb94766494b16413c378",
+      "task_id": "gold138_l2_027"
+    },
+    {
+      "prompt_sha256": "e0494b76fc95bb8915e06df6a51c5996ebcbddb8754079d6de80d735f34ef59d",
+      "task_id": "gold138_l2_028"
+    },
+    {
+      "prompt_sha256": "f343b4a776b855bfea6b8406507be875efb8a866bd9ce10e49fd65203bd8a03e",
+      "task_id": "gold138_l2_029"
+    },
+    {
+      "prompt_sha256": "f4dbe21534707af6eb070ebb20a56ca83b577ef2639d75d16dffbf8ccd1d5976",
+      "task_id": "gold138_l2_030"
+    },
+    {
+      "prompt_sha256": "f9613c771f63cc09e2ee1abafd54e7d025326f6a203bd64695c054ce7a554ff4",
+      "task_id": "gold138_l2_031"
+    },
+    {
+      "prompt_sha256": "8b0e602c020cce2ccef7f266fe6d3919a36d0761bbccbda08002ca71b4dd9000",
+      "task_id": "gold138_l2_032"
+    },
+    {
+      "prompt_sha256": "5cbf93a1e4b00e9ec4eb2cb82752e071658b94a5340c36ae5e11e30aa20b4333",
+      "task_id": "gold138_l2_033"
+    },
+    {
+      "prompt_sha256": "0ed561819c033483445120a8b2af416687d79a5b5ade61f3c3a022fecdf7966d",
+      "task_id": "gold138_l2_034"
+    },
+    {
+      "prompt_sha256": "8e93f01f2b254e4c8e9cf299ba4d6a4175d2f043309e93938834c61c9d3baa2d",
+      "task_id": "gold138_l2_035"
+    },
+    {
+      "prompt_sha256": "eca4d9b14a0c981200af54d5022d20637d84cdf2490c3822a7a0c12b236d4830",
+      "task_id": "gold138_l2_036"
+    },
+    {
+      "prompt_sha256": "0b573c14d50a021255d6b65a38bbb777a243d955be5aa00f5eff39414a5fdc95",
+      "task_id": "gold138_l2_037"
+    },
+    {
+      "prompt_sha256": "ef3bf3b07eabf90930bffaa3523e12161c8ae76c31544d5e65150a8c317809ca",
+      "task_id": "gold138_l2_038"
+    },
+    {
+      "prompt_sha256": "a98bc72c5ca6d63094dbd3b875eaa5a1a8e3ee6db4f72b7b6bb14637dc39f2d5",
+      "task_id": "gold138_l2_039"
+    },
+    {
+      "prompt_sha256": "eadf3053162361ea1788a2fdc5d693c419a4527ffdeeba4421c2582b3550980f",
+      "task_id": "gold138_l2_040"
+    },
+    {
+      "prompt_sha256": "411a3ef43c76c50bbb74e6191fb01f9c304e06c6dc5f8965e47b77ae34737684",
+      "task_id": "gold138_l2_041"
+    },
+    {
+      "prompt_sha256": "f27ee12807484885ca4b3ad53699dc98b96c97f6e6e83faa8070d90a9a80f8df",
+      "task_id": "gold138_l2_042"
+    },
+    {
+      "prompt_sha256": "aa2da4e26574926fb8cff396a5161d452b5e0e1e6c20e9d7ddfe2e4a875a6fb3",
+      "task_id": "gold138_l2_043"
+    },
+    {
+      "prompt_sha256": "e686832373d64b3bcdab9ec94dad06203796986f65f4c849e669b6029c36db56",
+      "task_id": "gold138_l2_044"
+    },
+    {
+      "prompt_sha256": "f22559b6a75eec39367e68bbae597a1f08d70c3fe5f0f5531d59139a00ced28c",
+      "task_id": "gold138_l2_045"
+    },
+    {
+      "prompt_sha256": "b89fa1cd41b438a21e0a82c8a3ea00ae6e59cb4403b13328a18ae09270aaead8",
+      "task_id": "gold138_l2_046"
+    },
+    {
+      "prompt_sha256": "38d9015a8ce00094760848ee15d60fe53a626281a58558a11d46854af4306245",
+      "task_id": "gold138_l2_047"
+    },
+    {
+      "prompt_sha256": "85699ed3c4cf8ec8343e36ec98bea9e912ee2b6e5df63d04f3f0dca0cebcf004",
+      "task_id": "gold138_l2_048"
+    },
+    {
+      "prompt_sha256": "611e9426380301e4d0955b7b9e990d597f8d4fdc269cef7d5a2f2fe2971fc7f9",
+      "task_id": "gold138_l3_001"
+    },
+    {
+      "prompt_sha256": "95e9eac2c18fa3d17f312d32f96d3d055049a39200223aac547aef8a103b224d",
+      "task_id": "gold138_l3_002"
+    },
+    {
+      "prompt_sha256": "89d2e74c6a0e0345391841d8712489b3a1fad9ebc43bc39a767658ee5d2b9dd7",
+      "task_id": "gold138_l3_003"
+    },
+    {
+      "prompt_sha256": "c1e1c1055bb5341b3cd96fa438e2ab6d0d589fdf4ce0700d02685a9867635ac3",
+      "task_id": "gold138_l3_004"
+    },
+    {
+      "prompt_sha256": "a24dbba4a310c4f95860729cddaed2a83473ffd7278c6cbd94dcc6698c8f32af",
+      "task_id": "gold138_l3_005"
+    },
+    {
+      "prompt_sha256": "dc8ae9e9a58c84581425404e5fc8b00590486a45e29c528d863b6128e23500e8",
+      "task_id": "gold138_l3_006"
+    },
+    {
+      "prompt_sha256": "31640d1a7c31ff8a03137d11b528caba86501c627b07287de33b77a79e4bf97e",
+      "task_id": "gold138_l3_007"
+    },
+    {
+      "prompt_sha256": "10fd570fb29f022e000eef2cb5af53d484cb3a60777143cb94e14f45595cdcca",
+      "task_id": "gold138_l3_008"
+    },
+    {
+      "prompt_sha256": "6fb794bf412680e997ff23e54a2fdd910b16bc500439fd92fb2979231fa9dad4",
+      "task_id": "gold138_l3_009"
+    },
+    {
+      "prompt_sha256": "f4c2a69806b79976b46c6c70f3d768d076a2c49d66efbdfff126bcdf4b47086d",
+      "task_id": "gold138_l3_010"
+    },
+    {
+      "prompt_sha256": "f3df22c95fd97b39f3ac3f4339a4307edb8896815440dc9cd67bdee638bd92d0",
+      "task_id": "gold138_l3_011"
+    },
+    {
+      "prompt_sha256": "4ab0046eda1ba164ef0721280845b431cdec4b9d29125e9052c26be53bfb0012",
+      "task_id": "gold138_l3_012"
+    },
+    {
+      "prompt_sha256": "69998298999133ea2400f7b683bd8951cbae992c41d47b86cfe2b115a2bdeffb",
+      "task_id": "gold138_l3_013"
+    },
+    {
+      "prompt_sha256": "3286fd5205579c15c9f76815b62f2f036bb655823a8bb4190c9002162da2944a",
+      "task_id": "gold138_l3_014"
+    },
+    {
+      "prompt_sha256": "6042c150ba70be0b8a919379cf531e200e71c741adb2ba75d4e8261e6ffac336",
+      "task_id": "gold138_l3_015"
+    },
+    {
+      "prompt_sha256": "6d1ccba2df228a5885cc6f826069f64a55cf25d7489a6b109c952414a88e2d5e",
+      "task_id": "gold138_l3_016"
+    },
+    {
+      "prompt_sha256": "537d9e383eee1b915978515035888cb70e32f4dcafd436d35f678f5a57959c94",
+      "task_id": "gold138_l3_017"
+    },
+    {
+      "prompt_sha256": "a24935b69c7fccdcd98c2e1e428089ccdd986d5042719578ff858c0b4dcb93a3",
+      "task_id": "gold138_l3_018"
+    },
+    {
+      "prompt_sha256": "4d4be6ed66d67bba56e680549d2c0ba878a112318897bffb5deb1b9e8fe5a881",
+      "task_id": "gold138_l3_019"
+    },
+    {
+      "prompt_sha256": "698500ce938b70419dc253f17d86b489355c7d044483b3dde7b5eeb01e044e6f",
+      "task_id": "gold138_l3_020"
+    },
+    {
+      "prompt_sha256": "7eed7121e3e743fbe630f32ca7d7e7772d4725c7d85cd60d44f4c101a2b6b997",
+      "task_id": "gold138_l3_021"
+    },
+    {
+      "prompt_sha256": "b5c6715dfae1306c78212e72aacbeac583d4c4d7f0e15b7e7322cd857ffdb49b",
+      "task_id": "gold138_l3_022"
+    },
+    {
+      "prompt_sha256": "d5746033b9213aaefa8e2d0c8bf45583aa49e1a29507a47cb9c0516621a68102",
+      "task_id": "gold138_l3_023"
+    },
+    {
+      "prompt_sha256": "081197dde74b601069827dad79b9f6bdf80f583006895cd996b1766613626267",
+      "task_id": "gold138_l3_024"
+    },
+    {
+      "prompt_sha256": "86cf6fa6592f2037a5bfaec8077ebccbe3eb9d24e846e135afe893869a0f269e",
+      "task_id": "gold138_l3_025"
+    },
+    {
+      "prompt_sha256": "00c19c7b27d53aab94225c6f163e6c8a634e5ffc6d68514ecd65e7725e9b9204",
+      "task_id": "gold138_l3_026"
+    },
+    {
+      "prompt_sha256": "c8f7d010657cc8a2172a03721906ee4d37a44ae62ef62ecb58084b5b98222562",
+      "task_id": "gold138_l3_027"
+    },
+    {
+      "prompt_sha256": "1f11f2b040ad6b62b9cb5ee18bc1e4863d76c4ecbfd4c3307d3fff00e2772351",
+      "task_id": "gold138_l3_028"
+    },
+    {
+      "prompt_sha256": "5eafdc10c94848ea44f70142664a5aa8cc98b7191f91eb06752afbca9aae51d9",
+      "task_id": "gold138_l3_029"
+    },
+    {
+      "prompt_sha256": "37f2c663313c360ef2834028b80e5b77a947e3299a2ae9371da529af943e4aea",
+      "task_id": "gold138_l3_030"
+    },
+    {
+      "prompt_sha256": "0e3d047aff06d3f86fe00ea0427a4ee854b382a325222dfe73f2a927235f82ba",
+      "task_id": "gold138_l3_031"
+    },
+    {
+      "prompt_sha256": "846f2fdd51c0616ac9cc9e54502e89ce9ba1a89792e90191052f87ea4cd06bc8",
+      "task_id": "gold138_l3_032"
+    },
+    {
+      "prompt_sha256": "aa1c8a90f60bb882081dd9eba1c3b6ec9325e0eec38db36b8e3cb296f12338d8",
+      "task_id": "gold138_l3_033"
+    },
+    {
+      "prompt_sha256": "c7dd13c9db1f0dd7fb79c1bedaf003df3395c692632f25a680ad40aae18699ac",
+      "task_id": "gold138_l3_034"
+    },
+    {
+      "prompt_sha256": "eee84b64425312b5f2b7f56d3d2433228c5c77883408a1a8e10f040842fab316",
+      "task_id": "gold138_l3_035"
+    },
+    {
+      "prompt_sha256": "23f502c155e39a56435bd45a056a6f143ba4a5ee7001f0e4a46c7c731f8aaaaf",
+      "task_id": "gold138_l3_036"
+    },
+    {
+      "prompt_sha256": "571d3c74a5c4c9be2f01bfeb321ea6bed7912074324fb93d05e28c9c59c29180",
+      "task_id": "gold138_l3_037"
+    },
+    {
+      "prompt_sha256": "96855c59e074c0d86e40ebc11f15107e79f9134e0f6abcb200681f6fef3ad6ea",
+      "task_id": "gold138_l3_038"
+    },
+    {
+      "prompt_sha256": "559ad93ca40ca62bd815eea1257fef90e6ae4bcb0db3c5d83353a9dfbafe6e90",
+      "task_id": "gold138_l3_039"
+    },
+    {
+      "prompt_sha256": "6d23d534474bac765a85b32148b7be67d19a4b84317d4a3f2c05d25d02fcfcc2",
+      "task_id": "gold138_l3_040"
+    },
+    {
+      "prompt_sha256": "c7dc02fc8ce3f60bc73a0218eb3c0d1c06c454ae14a3f73d1f57ef962075012e",
+      "task_id": "gold138_l3_041"
+    },
+    {
+      "prompt_sha256": "cee32b4db041594df0bf77d2ff3a305196c4855ca4e8f39559100cb72560c61d",
+      "task_id": "gold138_l3_042"
+    },
+    {
+      "prompt_sha256": "0830c82c3b3fe71a63e19c0dbe3b4be2248f4f78a8f56cce2a0bf777ac751acd",
+      "task_id": "gold138_l3_043"
+    },
+    {
+      "prompt_sha256": "340af0bea07c03518eca292834b11305a3ad35d6c93e3547d29bb5769c78fb4a",
+      "task_id": "gold138_l3_044"
+    },
+    {
+      "prompt_sha256": "a2aa4282230c967584de21725b8f34753dbf4f03c97e5347c6e776dbf777b97c",
+      "task_id": "gold138_l3_045"
+    },
+    {
+      "prompt_sha256": "b4b747c07ad69cf88bbe9f23fa0ff1bfc5c4131bccb6d1e33140a2b3b9e64ad4",
+      "task_id": "gold138_l3_046"
+    },
+    {
+      "prompt_sha256": "fefc1b02ed3d7b359681333fc1f9e78acd8aa1908fb702e8a92e2cf956a552a7",
+      "task_id": "gold138_l3_047"
+    },
+    {
+      "prompt_sha256": "e3cb246787de3d0f0cead1f41e39b2f7b059e4c305ebf1dca6a5774ff830a3bd",
+      "task_id": "gold138_l3_048"
+    },
+    {
+      "prompt_sha256": "04a2779900e22684e6feab47331a8a810f275debd47243cd91d2c73fa132e31d",
+      "task_id": "gold138_l3_049"
+    },
+    {
+      "prompt_sha256": "bf56a47804e1c21dec88a7f011b49c537298f9bbc18e8d612db8a50276dff86d",
+      "task_id": "gold138_l3_050"
+    },
+    {
+      "prompt_sha256": "bb450405b740240175e62fa10e098c5b61ee8ac33a3803f3652387ab52cb62bb",
+      "task_id": "gold138_l3_051"
+    },
+    {
+      "prompt_sha256": "05b6a998d54e1b283a79299520a0829923d809deda3f0dbdafd61bb26655f443",
+      "task_id": "gold138_l3_052"
+    },
+    {
+      "prompt_sha256": "5a296f92efac9860ef2cac2144389c964c1234a92c5ecc6b259b8bf999c5d169",
+      "task_id": "gold138_l3_053"
+    },
+    {
+      "prompt_sha256": "fb09be05ec8cd2572990d2130f396affd5d2e198dcda8ba3126e6b579a12075b",
+      "task_id": "gold138_l3_054"
+    },
+    {
+      "prompt_sha256": "88e3d800312a610391089134e191476ea91ad1efe2476bf03b8d6841eda25f34",
+      "task_id": "gold138_l3_055"
+    },
+    {
+      "prompt_sha256": "ff41f66b9cc1be90f6c9db72059a365891c21d99be0627c1d6cc572996e61fc0",
+      "task_id": "gold138_l3_056"
+    },
+    {
+      "prompt_sha256": "f241baa6c0d384291e2a4d05f27b7ac1266a935dca1c5f3659ad996a51f34af4",
+      "task_id": "gold138_l3_057"
+    },
+    {
+      "prompt_sha256": "4f2ddb9e73389dc6ba2847f927643f0a8b87a964fc7ee9fe141563ff7aa51014",
+      "task_id": "gold138_l3_058"
+    },
+    {
+      "prompt_sha256": "3e910e789e9403aaa95df3308a7a394f1a60de88682f85fde17a126d4aabacb2",
+      "task_id": "gold138_l3_059"
+    },
+    {
+      "prompt_sha256": "ef1b39030ab02e7828d279add43374d44b5bdfef76046c62bfcc18d5d28ac9da",
+      "task_id": "gold138_l3_060"
+    }
+  ],
+  "record_count": 138,
+  "source_manifest_sha256": "5c00943dd49ff5e7ff67d318e9dda3fcb394164b407c02ecaf261e8b6eff6fac",
+  "spec_rich_jsonl_sha256": "1b395f63e94c7225b1686322a436441c371bebaea3dd7966cf187535e7a172f4",
+  "status": "passed"
+}

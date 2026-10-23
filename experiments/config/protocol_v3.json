@@ -1,0 +1,18 @@
+{
+  "default_split": "pilot",
+  "generation_attempts": 1,
+  "held_out_enabled": false,
+  "max_network_retries": 3,
+  "max_output_tokens": 8192,
+  "prompt_version": "primary-zero-shot-v3",
+  "protocol_id": "primary-zero-shot-pilot-v3",
+  "repair_rounds": 0,
+  "request_timeout_seconds": 600,
+  "retry_backoff_seconds": [
+    2,
+    4,
+    8
+  ],
+  "schema_version": "3.0",
+  "temperature": 0
+}

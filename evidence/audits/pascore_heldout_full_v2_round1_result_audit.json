@@ -1,0 +1,88 @@
+{
+  "audit_date": "2026-09-30",
+  "condition": "pascore-full-v2",
+  "run_id": "pascore-heldout-full-v2",
+  "round": 1,
+  "split": "held_out",
+  "evaluation_mode": "strict",
+  "artifact": {
+    "path": "experiments/packages/pascore-heldout-full-v2-diagnostics-round-1.zip",
+    "sha256": "5fece80ac52d1aa95e28f7c103663f9f02311d433a0f101d5dcef2a2cbc6585d",
+    "manifest_sha256": "842e544a64937e0d2b6a0a57b2c0933fff0e7a181ba75955812e7282314c6e54",
+    "file_count": 790,
+    "verified_file_hashes": 789,
+    "hash_mismatches": 0,
+    "duplicate_names": 0,
+    "unsafe_paths": 0
+  },
+  "source_execution_package": {
+    "path": "experiments/packages/pascore-heldout-full-v2-round-1.zip",
+    "sha256": "07a1fe4b5f33abba01a06d40d3efb03a6e6d68d90d1202cbd566318be32ff399",
+    "manifest_sha256": "58d93d87db9b735bed20b0547cc7035e34a60dd0bb226e6340a427296d050160"
+  },
+  "integrity": {
+    "entry_count": 127,
+    "unique_pairs": 127,
+    "feedback_ready": 27,
+    "source_execution_manifest_sha256": "58d93d87db9b735bed20b0547cc7035e34a60dd0bb226e6340a427296d050160"
+  },
+  "aggregate": {
+    "total": 127,
+    "generation_failure": 0,
+    "execution_failure": 3,
+    "protocol_failure": 1,
+    "semantic_failure": 23,
+    "semantic_success": 100,
+    "semantic_accuracy": 0.7874015748031497,
+    "macro_level_accuracy": 0.9052631578947369
+  },
+  "execution": {
+    "execution_success": 124,
+    "generation_failure": 0,
+    "policy_rejected": 0,
+    "program_failure": 3,
+    "timeout": 0
+  },
+  "by_model": {
+    "qwen3.8-chat": {"success": 28, "total": 32},
+    "deepseek-v4-flash-ascend1": {"success": 36, "total": 53},
+    "gemini-3.5-flash-lite": {"success": 36, "total": 42}
+  },
+  "by_level": {
+    "L1": {"success": 10, "total": 10},
+    "L2": {"success": 22, "total": 22},
+    "L3": {"success": 68, "total": 95}
+  },
+  "by_subtype": {
+    "simple_retrieval": {"success": 10, "total": 10},
+    "subtree_discovery": {"success": 5, "total": 5},
+    "exact_window": {"success": 11, "total": 11},
+    "sampling_constrained": {"success": 6, "total": 6},
+    "same_shot_alignment": {"success": 23, "total": 35},
+    "cross_shot_comparison": {"success": 32, "total": 41},
+    "adaptive_access": {"success": 13, "total": 19}
+  },
+  "cumulative_after_round_1": {
+    "semantic_success": 297,
+    "total": 324,
+    "semantic_accuracy": 0.9166666666666666,
+    "by_model": {
+      "qwen3.8-chat": {"success": 104, "total": 108},
+      "deepseek-v4-flash-ascend1": {"success": 91, "total": 108},
+      "gemini-3.5-flash-lite": {"success": 102, "total": 108}
+    },
+    "by_level": {
+      "L1": {"success": 72, "total": 72},
+      "L2": {"success": 114, "total": 114},
+      "L3": {"success": 111, "total": 138}
+    }
+  },
+  "round_2": {
+    "eligible": 27,
+    "qwen3.8-chat": 4,
+    "deepseek-v4-flash-ascend1": 17,
+    "gemini-3.5-flash-lite": 6,
+    "repair_plan_sha256": "86de736d2ebaf2d540cb5339caaad032a8d691155fe4e79f0a41c1ff59213aa3",
+    "protocol_sha256": "ede9ea0c47da73b017d9a09fcf633dd8668c19895110545777ebfaa7d13558ed"
+  }
+}

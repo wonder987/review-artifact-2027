@@ -1,0 +1,204 @@
+[
+  {
+    "$match": {
+      "idx_shot": {
+        "$in": [
+          10000,
+          50000,
+          60001,
+          70000,
+          80000,
+          90000,
+          100000,
+          106915,
+          110003,
+          120000,
+          130000,
+          140000,
+          147001,
+          150000,
+          160030,
+          165000
+        ]
+      }
+    }
+  },
+  {
+    "$unwind": "$signal_metadata"
+  },
+  {
+    "$set": {
+      "sample_num": {
+        "$convert": {
+          "input": "$signal_metadata.samplenum",
+          "to": "double",
+          "onError": null,
+          "onNull": null
+        }
+      },
+      "freq_num": {
+        "$convert": {
+          "input": "$signal_metadata.freq",
+          "to": "double",
+          "onError": null,
+          "onNull": null
+        }
+      },
+      "daqtime_num": {
+        "$convert": {
+          "input": "$signal_metadata.daqtime",
+          "to": "double",
+          "onError": null,
+          "onNull": null
+        }
+      },
+      "trigtime_num": {
+        "$convert": {
+          "input": "$signal_metadata.trigtime",
+          "to": "double",
+          "onError": null,
+          "onNull": null
+        }
+      }
+    }
+  },
+  {
+    "$match": {
+      "sample_num": { "$gt": 0 },
+      "freq_num": { "$gt": 0 },
+      "daqtime_num": { "$gt": 0 },
+      "trigtime_num": { "$ne": null },
+      "signal_metadata.idx_tree": { "$ne": "error" },
+      "signal_metadata.idx_subtree": { "$ne": "error" },
+      "signal_metadata.idx_signame": { "$ne": "error" }
+    }
+  },
+  {
+    "$set": {
+      "size_band": {
+        "$switch": {
+          "branches": [
+            {
+              "case": { "$lte": ["$sample_num", 5000000] },
+              "then": "safe_full"
+            },
+            {
+              "case": { "$lte": ["$sample_num", 20000000] },
+              "then": "window_required"
+            },
+            {
+              "case": { "$lte": ["$sample_num", 100000000] },
+              "then": "large"
+            }
+          ],
+          "default": "very_large"
+        }
+      },
+      "estimated_total_mib": {
+        "$divide": [
+          { "$multiply": ["$sample_num", 12] },
+          1048576
+        ]
+      }
+    }
+  },
+  {
+    "$set": {
+      "target_points": {
+        "$switch": {
+          "branches": [
+            {
+              "case": { "$eq": ["$size_band", "safe_full"] },
+              "then": 1000000
+            },
+            {
+              "case": { "$eq": ["$size_band", "window_required"] },
+              "then": 10000000
+            },
+            {
+              "case": { "$eq": ["$size_band", "large"] },
+              "then": 50000000
+            }
+          ],
+          "default": 200000000
+        }
+      }
+    }
+  },
+  {
+    "$set": {
+      "distance_from_target": {
+        "$abs": { "$subtract": ["$sample_num", "$target_points"] }
+      }
+    }
+  },
+  {
+    "$sort": {
+      "idx_shot": 1,
+      "size_band": 1,
+      "signal_metadata.idx_subtree": 1,
+      "distance_from_target": 1
+    }
+  },
+  {
+    "$group": {
+      "_id": {
+        "shot": "$idx_shot",
+        "band": "$size_band",
+        "subtree": "$signal_metadata.idx_subtree"
+      },
+      "candidate": {
+        "$first": {
+          "shot": "$idx_shot",
+          "tree": "$signal_metadata.idx_tree",
+          "subtree": "$signal_metadata.idx_subtree",
+          "signal_name": "$signal_metadata.idx_signame",
+          "sample_num": "$sample_num",
+          "frequency": "$freq_num",
+          "daqtime": "$daqtime_num",
+          "trigtime": "$trigtime_num",
+          "unit": "$signal_metadata.sigunit",
+          "segment_num": "$signal_metadata.segnum",
+          "segment_time": "$signal_metadata.segtime",
+          "size_band": "$size_band",
+          "estimated_total_mib": "$estimated_total_mib"
+        }
+      }
+    }
+  },
+  {
+    "$sort": {
+      "_id.shot": 1,
+      "_id.band": 1,
+      "_id.subtree": 1
+    }
+  },
+  {
+    "$group": {
+      "_id": {
+        "shot": "$_id.shot",
+        "band": "$_id.band"
+      },
+      "candidates": { "$push": "$candidate" }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "candidates": { "$slice": ["$candidates", 5] }
+    }
+  },
+  {
+    "$unwind": "$candidates"
+  },
+  {
+    "$replaceRoot": { "newRoot": "$candidates" }
+  },
+  {
+    "$sort": {
+      "shot": 1,
+      "size_band": 1,
+      "subtree": 1
+    }
+  }
+]

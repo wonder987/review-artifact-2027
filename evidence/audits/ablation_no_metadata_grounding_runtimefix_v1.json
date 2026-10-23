@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "condition": "no_metadata_grounding",
+  "run_id": "ablation-no-metadata-grounding-qwen-v1",
+  "round": 0,
+  "reason": "The original runtime compared the disabled grounding file hash to a null manifest entry and rejected the package before execution.",
+  "superseded_package": {
+    "path": "experiments/packages/ablation-no-metadata-grounding-qwen-v1-round-0.zip",
+    "sha256": "89c51000816aad5ece06cfefa3fc0ba545dc0b3dc34f20fb93f8056954eff675"
+  },
+  "replacement_package": {
+    "path": "experiments/packages/ablation-no-metadata-grounding-qwen-v1-round-0-runtimefix.zip",
+    "sha256": "e06ec0a0df7111243d70dbae19d7957137c484e15a0d2eb2eb645df597798953"
+  },
+  "entry_count": 60,
+  "manifest_entries_identical": true,
+  "changed_runtime_file": "run_pascore_cs1_round.py",
+  "old_runtime_sha256": "81071818ff913af5cf34a8cea2368619b8e99242a201c76f6d75a8e853bcddbb",
+  "new_runtime_sha256": "b5c61d4bb80cb1f267385ef2ccb5d7ecf779edda55ecab1450b59b8f2ee33acf"
+}

@@ -1,0 +1,113 @@
+{
+  "ablation": {
+    "fixed_model": "qwen3.8-chat",
+    "source_split": "held_out",
+    "task_count": 60,
+    "task_ids_source": "benchmark/splits.json#ablation"
+  },
+  "baselines": {
+    "feedback_baseline": {
+      "condition": "no_failure_diagnosis",
+      "definition": "metadata-grounded initial generation followed by raw execution feedback and at most two repairs",
+      "task_count": 108
+    },
+    "prompt_only": {
+      "definition": "metadata-grounded initial generation with no execution feedback and zero repair rounds",
+      "reuse_source": "pascore-heldout-full-v2 round 0, qwen3.8-chat",
+      "task_count": 108
+    }
+  },
+  "conditions": [
+    {
+      "condition_id": "full",
+      "scope": "ablation_reference",
+      "task_count": 60,
+      "reuse": "pascore-heldout-full-v2 rounds 0-2"
+    },
+    {
+      "condition_id": "no_metadata_grounding",
+      "scope": "ablation",
+      "task_count": 60,
+      "reuse": "reuse the matching qwen3.8-chat Primary Zero-shot v2 Round-0 programs; subsequent rounds use this condition"
+    },
+    {
+      "condition_id": "no_failure_diagnosis",
+      "scope": "feedback_baseline_and_ablation",
+      "task_count": 108,
+      "reuse": "reuse Full round-0 programs; use the 60-task subset for the ablation table"
+    },
+    {
+      "condition_id": "no_structured_feedback",
+      "scope": "ablation",
+      "task_count": 60,
+      "reuse": "reuse Full round-0 programs"
+    },
+    {
+      "condition_id": "no_resource_guard",
+      "scope": "ablation",
+      "task_count": 60,
+      "reuse": "reuse Full round-0 programs, then execute with the guard disabled"
+    },
+    {
+      "condition_id": "single_round",
+      "scope": "ablation",
+      "task_count": 60,
+      "reuse": "pascore-heldout-full-v2 rounds 0-1"
+    }
+  ],
+  "execution_budget": {
+    "max_memory_mib": 8192,
+    "max_output_mib": 2,
+    "timeout_seconds": 90
+  },
+  "frozen_date": "2026-10-08",
+  "generation_budget": {
+    "max_repair_rounds": 2,
+    "same_model_configuration": true,
+    "same_output_protocol": true,
+    "single_round_exception": 1
+  },
+  "prepared_round0_packages": {
+    "ablation-no-metadata-grounding-qwen-v1-round-0.zip": {
+      "entry_count": 60,
+      "sha256": "89c51000816aad5ece06cfefa3fc0ba545dc0b3dc34f20fb93f8056954eff675"
+    },
+    "ablation-no-resource-guard-qwen-v1-round-0.zip": {
+      "entry_count": 60,
+      "sha256": "1e5a9f7cce54ebba95b3a36f35afb5edaa890879664b5c44992e88cd56a55e2c"
+    },
+    "ablation-no-structured-feedback-qwen-v1-round-0.zip": {
+      "entry_count": 60,
+      "sha256": "e11f87e46175cff34ff3f54f6e44e7bbcde8f5e8f15a71d74db7122baaad9024"
+    },
+    "feedback-baseline-heldout-qwen-v1-round-0.zip": {
+      "entry_count": 108,
+      "sha256": "3da990a240bb9a168758a482249933cbbe2c2ca3cb884ce329386eabbcb02d1e"
+    }
+  },
+  "rationale": {
+    "fixed_model": "Qwen is the median Full PA-SCoRe model on held-out accuracy, avoids the Gemini ceiling, and has complete generation artifacts.",
+    "reuse_rule": "Reuse is allowed only when every upstream module is identical through the reused stage."
+  },
+  "schema_version": "1.0",
+  "sha256": {
+    "benchmark/gold138_manifest.json": "5c00943dd49ff5e7ff67d318e9dda3fcb394164b407c02ecaf261e8b6eff6fac",
+    "benchmark/gold138_pascore_grounded_v2.jsonl": "e6d9cd199a6f5632d0778c3b42f7a8718a730fd61f0c9f8ea715d4fe3e6df73b",
+    "benchmark/gold138_primary_zero_shot_v2.jsonl": "d72a927cf5fd3157bf54999f2d481e4031597f4e2a5431066ee6b25f3f0e8903",
+    "benchmark/splits.json": "2163fdd4d290693476b923e38e4a71c34fcde81c67b489808f588b316cb7b881",
+    "experiments/config/models_direct_zero_shot_v2.json": "8f7bfed35c67cb7da7f2e659b1f04173b48a0922097569bf415f2481aca5a472",
+    "experiments/config/pascore_full_v1.json": "d3d4da03bd7501596a72733cb85d2838bac83b4d7ef45f41976f2f5d9026cd70",
+    "experiments/config/pascore_initial_protocol_v2_heldout.json": "10c2f7bec1ece55eb93c0005092953d8bd1fa4eb5d877b41006d5e280d201e1d",
+    "experiments/config/pascore_no_failure_diagnosis_v1.json": "625185600d68f32adde3214e1f6ad7a96260267984ee54a01f648889a38f4279",
+    "experiments/config/pascore_no_metadata_grounding_v1.json": "0c876fc63dcea2def293205c510235045409e3a8450bc2072d128010970bf8da",
+    "experiments/config/pascore_no_resource_guard_v1.json": "6f2dee5e32ba5fb828bf3d6d936dc2667e53d9d982c7909a93e825d783b09eeb",
+    "experiments/config/pascore_no_structured_feedback_v1.json": "4d657c0c2f8090c8c5a4678df6b42e2a23e85f97246a45eba6029a9b4880cd0b",
+    "experiments/config/pascore_single_round_v1.json": "7adee9822e1470f83acdd728f7a205f02d2ddccc5cc949879c3af6853e91f351",
+    "experiments/audits/baseline_ablation_reuse_v1.json": "6367a59b254747b060c8be37c9856d7a993a1a7960bc38d413333b65784feab1",
+    "experiments/packages/pascore-heldout-full-v2-diagnostics-round-0.zip": "a4f26935b0692c6649607f16d10bf84f4b21e95c0d65239279d62ba961152c07",
+    "experiments/packages/pascore-heldout-full-v2-diagnostics-round-1.zip": "5fece80ac52d1aa95e28f7c103663f9f02311d433a0f101d5dcef2a2cbc6585d",
+    "experiments/packages/pascore-heldout-full-v2-diagnostics-round-2.zip": "b533056e9b0fa9a80de8c940b3447f9b5a266945062025be8420385d4e6affd1",
+    "scripts/audit_baseline_ablation_reuse.py": "20aa4ddf967d1857bce5dad3decc21194e34eeb7f6d5bc93850b7115c6124919",
+    "scripts/package_pascore_round.py": "8dff08529d8c04ddd2fbc64b8caa0fc5390e4d45df4411b7eea81b2169af8e6b"
+  }
+}

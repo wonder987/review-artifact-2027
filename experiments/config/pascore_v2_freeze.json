@@ -1,0 +1,49 @@
+{
+  "condition": "pascore-full-v2",
+  "frozen_date": "2026-09-28",
+  "held_out": {
+    "call_count": 324,
+    "level_counts": {
+      "L1": 24,
+      "L2": 38,
+      "L3": 46
+    },
+    "model_count": 3,
+    "task_count": 108
+  },
+  "models": [
+    "qwen3.8-chat",
+    "deepseek-v4-flash-ascend1",
+    "gemini-3.5-flash-lite"
+  ],
+  "pilot_gate": {
+    "final_semantic_accuracy": 0.9111111111111111,
+    "final_semantic_success": 82,
+    "infrastructure_failure": 0,
+    "max_repair_rounds": 2,
+    "model_evaluable": 90,
+    "round_0_semantic_success": 59,
+    "round_1_repaired": 19,
+    "round_2_repaired": 4,
+    "status": "passed",
+    "terminal_failure": 8
+  },
+  "sha256": {
+    "benchmark/gold138_manifest.json": "5c00943dd49ff5e7ff67d318e9dda3fcb394164b407c02ecaf261e8b6eff6fac",
+    "benchmark/gold138_pascore_grounded_v2.jsonl": "e6d9cd199a6f5632d0778c3b42f7a8718a730fd61f0c9f8ea715d4fe3e6df73b",
+    "experiments/config/models_direct_zero_shot_v2.json": "8f7bfed35c67cb7da7f2e659b1f04173b48a0922097569bf415f2481aca5a472",
+    "experiments/config/pascore_full_v1.json": "d3d4da03bd7501596a72733cb85d2838bac83b4d7ef45f41976f2f5d9026cd70",
+    "experiments/config/pascore_initial_protocol_v2_heldout.json": "10c2f7bec1ece55eb93c0005092953d8bd1fa4eb5d877b41006d5e280d201e1d",
+    "scripts/execute_generated_batch.py": "678272285329fb364752e0d32e220288f7c43ec642bda028c7dd1ef435d004c0",
+    "scripts/failure_diagnosis.py": "88cbf6ed00de833e33ca3b2e2b8a1662f113ab22550bc920a3fb59ceda0bcff9",
+    "scripts/metadata_grounding.py": "5de5434c0284026185f8e3ec37e19b95412b0fcdcfb4ebc46686ca486e6e1dc8",
+    "scripts/package_pascore_round.py": "036910404ad2820d7cc4cafa31db0a5e43f9a689637e310f299e1cf313892313",
+    "scripts/repair_controller.py": "bdf6a4f6d85a708f2fde06e83c794eb975a83c9311709a087e6ffe3ad7c62418",
+    "scripts/resource_aware_guard.py": "50e4d4fa0fc3a6465fbeca93b1aa8bebf69add4e2d9cc8c3f35a35c5d0b24da7",
+    "scripts/run_llm_generation.py": "87af242fb49e8df52d43bbf93d757cee37184809bd7513cbefda5bb1ac8602a4",
+    "scripts/run_pascore_cs1_round.py": "81071818ff913af5cf34a8cea2368619b8e99242a201c76f6d75a8e853bcddbb",
+    "scripts/semantic_evaluator.py": "a17ce0abd832dedcd3f9960d5be01ea39874367c6accb0793a21a681eb555083",
+    "scripts/structured_feedback.py": "59ddcb9561a1c6613a6d630737bed371293e9782988d3e04211cce7a0545f3f4"
+  },
+  "split": "held_out"
+}

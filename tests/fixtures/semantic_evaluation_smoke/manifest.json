@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "expected_category": "execution_failure",
+      "expected_code": "api_invocation_error",
+      "kind": "execution_failure",
+      "model_alias": "deepseek-v4-flash-ascend1",
+      "task_id": "gold138_l1_025"
+    },
+    {
+      "expected_category": "execution_failure",
+      "expected_code": "api_invocation_error",
+      "kind": "execution_failure",
+      "model_alias": "deepseek-v4-flash-ascend1",
+      "task_id": "gold138_l2_014"
+    },
+    {
+      "expected_category": "execution_failure",
+      "expected_code": "runtime_error",
+      "kind": "execution_failure",
+      "model_alias": "deepseek-v4-flash-ascend1",
+      "task_id": "gold138_l3_037"
+    },
+    {
+      "expected_category": "execution_failure",
+      "expected_code": "api_invocation_error",
+      "kind": "execution_failure",
+      "model_alias": "qwen3.8-chat",
+      "task_id": "gold138_l1_025"
+    },
+    {
+      "expected_category": "execution_failure",
+      "expected_code": "api_invocation_error",
+      "kind": "execution_failure",
+      "model_alias": "qwen3.8-chat",
+      "task_id": "gold138_l2_014"
+    },
+    {
+      "expected_category": "execution_failure",
+      "expected_code": "api_invocation_error",
+      "kind": "execution_failure",
+      "model_alias": "qwen3.8-chat",
+      "task_id": "gold138_l3_037"
+    },
+    {
+      "expected_category": "semantic_failure",
+      "expected_code": "time_axis_hash_mismatch",
+      "kind": "time_axis_hash_mismatch",
+      "model_alias": "gemini-3.5-flash-lite",
+      "task_id": "gold138_l1_025"
+    },
+    {
+      "expected_category": "semantic_failure",
+      "expected_code": "signal_hash_mismatch",
+      "kind": "signal_hash_mismatch",
+      "model_alias": "gemini-3.5-flash-lite",
+      "task_id": "gold138_l2_014"
+    },
+    {
+      "expected_category": "success",
+      "expected_code": "semantic_success",
+      "kind": "pair_success",
+      "model_alias": "gemini-3.5-flash-lite",
+      "subtype": "cross_shot_comparison",
+      "task_id": "gold138_l3_037"
+    }
+  ],
+  "contains_raw_arrays": false,
+  "contains_credentials": false,
+  "schema_version": "1.0",
+  "source": "Recorded L1/L2/L3 smoke outcomes, reduced to classification fixtures"
+}

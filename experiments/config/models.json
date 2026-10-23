@@ -1,0 +1,41 @@
+{
+  "models": {
+    "deepseek-v4-flash-ascend1": {
+      "api_key_env": "GATEWAY_API_KEY",
+      "base_url": "https://gateway.example/v1",
+      "max_tokens_parameter": "max_tokens",
+      "model": "deepseek-v4-flash-ascend1",
+      "provider": "gateway",
+      "supports_temperature": true,
+      "transport": "curl"
+    },
+    "gemini-3.5-flash-lite": {
+      "api_key_env": "GEMINI_API_KEY",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "max_tokens_parameter": "max_tokens",
+      "model": "gemini-3.5-flash-lite",
+      "provider": "google",
+      "supports_temperature": true,
+      "transport": "curl"
+    },
+    "gpt-5.6-sol": {
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.openai.com/v1",
+      "max_tokens_parameter": "max_completion_tokens",
+      "model": "gpt-5.6-sol",
+      "provider": "openai",
+      "supports_temperature": true,
+      "transport": "curl"
+    },
+    "qwen3.8-chat": {
+      "api_key_env": "GATEWAY_API_KEY",
+      "base_url": "https://gateway.example/v1",
+      "max_tokens_parameter": "max_tokens",
+      "model": "qwen3.8-chat",
+      "provider": "gateway",
+      "supports_temperature": true,
+      "transport": "curl"
+    }
+  },
+  "schema_version": "1.0"
+}

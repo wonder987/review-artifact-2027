@@ -1,0 +1,95 @@
+{
+  "evidence_fields": [
+    "execution_status",
+    "error_type",
+    "error_message",
+    "failed_stage",
+    "failure_code",
+    "policy_violations",
+    "matched_rule",
+    "source_signature"
+  ],
+  "evidence_sources": [
+    "execution.json structured fields",
+    "bounded stdout.log and stderr.log diagnostic text",
+    "deterministic generated-program API signatures"
+  ],
+  "major_categories": [
+    {
+      "id": "code_generation",
+      "subtypes": [
+        "generation_timeout",
+        "syntax_error",
+        "import_error",
+        "unsafe_operation"
+      ]
+    },
+    {
+      "id": "mdsplus_interaction",
+      "subtypes": [
+        "hallucinated_api",
+        "wrong_api_signature",
+        "local_remote_api_confusion",
+        "node_lookup_error",
+        "tdi_expression_error",
+        "timebase_retrieval_error"
+      ]
+    },
+    {
+      "id": "resource_runtime",
+      "subtypes": [
+        "memory_exhaustion",
+        "execution_timeout",
+        "array_processing_error",
+        "serialization_error",
+        "unknown_runtime_error"
+      ]
+    },
+    {
+      "id": "output_protocol",
+      "subtypes": [
+        "invalid_json",
+        "target_schema_error",
+        "validation_schema_error",
+        "derived_schema_error",
+        "resource_decision_schema_error",
+        "status_contract_error"
+      ]
+    },
+    {
+      "id": "semantic_result",
+      "subtypes": [
+        "target_identity_mismatch",
+        "signal_mismatch",
+        "time_axis_mismatch",
+        "point_or_window_mismatch",
+        "alignment_or_statistic_mismatch",
+        "resource_decision_mismatch"
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "subtypes": [
+        "missing_artifact",
+        "corrupt_artifact",
+        "provider_outage",
+        "network_failure",
+        "evaluator_failure"
+      ]
+    }
+  ],
+  "precedence": [
+    "infrastructure",
+    "generation_failure",
+    "parser_or_policy",
+    "resource_limit_from_structured_or_process_output",
+    "generated_source_api_signature",
+    "api_or_signature",
+    "mdsplus_status_or_wrapper_message",
+    "runtime",
+    "output_protocol",
+    "semantic_result"
+  ],
+  "schema_version": "1.1",
+  "taxonomy_version": "pilot-failure-taxonomy-v1"
+}

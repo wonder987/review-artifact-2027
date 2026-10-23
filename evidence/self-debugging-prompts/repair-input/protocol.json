@@ -1,0 +1,24 @@
+{
+  "default_split": "pilot",
+  "frozen": true,
+  "frozen_model_aliases": [
+    "qwen3.8-chat"
+  ],
+  "generation_attempts": 1,
+  "generation_mode": "direct_zero_shot",
+  "held_out_enabled": true,
+  "max_network_retries": 3,
+  "max_output_tokens": 8192,
+  "pilot_gate_status": "passed",
+  "prompt_version": "self-debugging-repair-v1",
+  "protocol_id": "self-debugging-repair-heldout-qwen-v1",
+  "repair_rounds": 0,
+  "request_timeout_seconds": 600,
+  "retry_backoff_seconds": [
+    2,
+    4,
+    8
+  ],
+  "schema_version": "2.0",
+  "temperature": 0
+}

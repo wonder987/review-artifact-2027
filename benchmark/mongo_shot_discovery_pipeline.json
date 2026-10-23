@@ -1,0 +1,132 @@
+[
+  {
+    "$match": {
+      "$or": [
+        { "idx_shot": { "$gte": 10000, "$lt": 10050 } },
+        { "idx_shot": { "$gte": 20000, "$lt": 20050 } },
+        { "idx_shot": { "$gte": 30000, "$lt": 30050 } },
+        { "idx_shot": { "$gte": 40000, "$lt": 40050 } },
+        { "idx_shot": { "$gte": 50000, "$lt": 50050 } },
+        { "idx_shot": { "$gte": 60000, "$lt": 60050 } },
+        { "idx_shot": { "$gte": 70000, "$lt": 70050 } },
+        { "idx_shot": { "$gte": 80000, "$lt": 80050 } },
+        { "idx_shot": { "$gte": 90000, "$lt": 90050 } },
+        { "idx_shot": { "$gte": 100000, "$lt": 100050 } },
+        { "idx_shot": { "$gte": 110000, "$lt": 110050 } },
+        { "idx_shot": { "$gte": 120000, "$lt": 120050 } },
+        { "idx_shot": { "$gte": 130000, "$lt": 130050 } },
+        { "idx_shot": { "$gte": 140000, "$lt": 140050 } },
+        { "idx_shot": { "$gte": 150000, "$lt": 150050 } },
+        { "idx_shot": { "$gte": 160000, "$lt": 160050 } }
+      ],
+      "signal_metadata.0": { "$exists": true }
+    }
+  },
+  {
+    "$project": {
+      "idx_shot": 1,
+      "shot_bucket": {
+        "$floor": { "$divide": ["$idx_shot", 10000] }
+      },
+      "valid_signal_count": {
+        "$size": {
+          "$filter": {
+            "input": "$signal_metadata",
+            "as": "signal",
+            "cond": {
+              "$and": [
+                {
+                  "$gt": [
+                    {
+                      "$convert": {
+                        "input": "$$signal.samplenum",
+                        "to": "double",
+                        "onError": null,
+                        "onNull": null
+                      }
+                    },
+                    0
+                  ]
+                },
+                {
+                  "$gt": [
+                    {
+                      "$convert": {
+                        "input": "$$signal.freq",
+                        "to": "double",
+                        "onError": null,
+                        "onNull": null
+                      }
+                    },
+                    0
+                  ]
+                },
+                {
+                  "$gt": [
+                    {
+                      "$convert": {
+                        "input": "$$signal.daqtime",
+                        "to": "double",
+                        "onError": null,
+                        "onNull": null
+                      }
+                    },
+                    0
+                  ]
+                },
+                {
+                  "$ne": [
+                    {
+                      "$convert": {
+                        "input": "$$signal.trigtime",
+                        "to": "double",
+                        "onError": null,
+                        "onNull": null
+                      }
+                    },
+                    null
+                  ]
+                },
+                { "$ne": ["$$signal.idx_tree", "error"] },
+                { "$ne": ["$$signal.idx_subtree", "error"] },
+                { "$ne": ["$$signal.idx_signame", "error"] }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "$match": {
+      "valid_signal_count": { "$gte": 50 }
+    }
+  },
+  {
+    "$sort": {
+      "shot_bucket": 1,
+      "valid_signal_count": -1,
+      "idx_shot": 1
+    }
+  },
+  {
+    "$group": {
+      "_id": "$shot_bucket",
+      "idx_shot": { "$first": "$idx_shot" },
+      "valid_signal_count": { "$first": "$valid_signal_count" }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "shot_bucket": "$_id",
+      "idx_shot": 1,
+      "valid_signal_count": 1
+    }
+  },
+  {
+    "$sort": {
+      "idx_shot": 1
+    }
+  }
+]

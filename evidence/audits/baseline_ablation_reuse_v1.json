@@ -1,0 +1,344 @@
+{
+  "artifacts": {
+    "diagnostic_rounds": [
+      {
+        "path": "experiments\\packages\\pascore-heldout-full-v2-diagnostics-round-0.zip",
+        "round": 0,
+        "sha256": "a4f26935b0692c6649607f16d10bf84f4b21e95c0d65239279d62ba961152c07"
+      },
+      {
+        "path": "experiments\\packages\\pascore-heldout-full-v2-diagnostics-round-1.zip",
+        "round": 1,
+        "sha256": "5fece80ac52d1aa95e28f7c103663f9f02311d433a0f101d5dcef2a2cbc6585d"
+      },
+      {
+        "path": "experiments\\packages\\pascore-heldout-full-v2-diagnostics-round-2.zip",
+        "round": 2,
+        "sha256": "b533056e9b0fa9a80de8c940b3447f9b5a266945062025be8420385d4e6affd1"
+      }
+    ],
+    "split": {
+      "ablation_task_count": 60,
+      "path": "benchmark\\splits.json",
+      "sha256": "2163fdd4d290693476b923e38e4a71c34fcde81c67b489808f588b316cb7b881"
+    }
+  },
+  "eligible_entries_by_round": [
+    60,
+    16,
+    3
+  ],
+  "full_ablation": {
+    "by_category": {
+      "semantic_failure": 2,
+      "success": 58
+    },
+    "by_code": {
+      "aligned_second_hash_mismatch": 1,
+      "semantic_success": 58,
+      "signal_size_mismatch": 1
+    },
+    "by_level": {
+      "L1": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 13,
+        "total": 13
+      },
+      "L2": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 21,
+        "total": 21
+      },
+      "L3": {
+        "semantic_accuracy": 0.9230769230769231,
+        "semantic_success": 24,
+        "total": 26
+      }
+    },
+    "by_model": {
+      "qwen3.8-chat": {
+        "semantic_accuracy": 0.9666666666666667,
+        "semantic_success": 58,
+        "total": 60
+      }
+    },
+    "by_subtype": {
+      "adaptive_access": {
+        "semantic_accuracy": 0.9090909090909091,
+        "semantic_success": 10,
+        "total": 11
+      },
+      "cross_shot_comparison": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 9,
+        "total": 9
+      },
+      "exact_window": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 6,
+        "total": 6
+      },
+      "same_shot_alignment": {
+        "semantic_accuracy": 0.8333333333333334,
+        "semantic_success": 5,
+        "total": 6
+      },
+      "sampling_constrained": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 8,
+        "total": 8
+      },
+      "simple_retrieval": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 13,
+        "total": 13
+      },
+      "subtree_discovery": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 7,
+        "total": 7
+      }
+    },
+    "semantic_accuracy": 0.9666666666666667,
+    "semantic_success": 58,
+    "total": 60
+  },
+  "model_alias": "qwen3.8-chat",
+  "prompt_only_ablation": {
+    "by_category": {
+      "execution_failure": 4,
+      "semantic_failure": 12,
+      "success": 44
+    },
+    "by_code": {
+      "aligned_second_hash_mismatch": 1,
+      "policy_rejected": 3,
+      "resource_decision_mismatch": 1,
+      "runtime_error": 1,
+      "semantic_success": 44,
+      "signal_dtype_mismatch": 9,
+      "signal_size_mismatch": 1
+    },
+    "by_level": {
+      "L1": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 13,
+        "total": 13
+      },
+      "L2": {
+        "semantic_accuracy": 0.8571428571428571,
+        "semantic_success": 18,
+        "total": 21
+      },
+      "L3": {
+        "semantic_accuracy": 0.5,
+        "semantic_success": 13,
+        "total": 26
+      }
+    },
+    "by_model": {
+      "qwen3.8-chat": {
+        "semantic_accuracy": 0.7333333333333333,
+        "semantic_success": 44,
+        "total": 60
+      }
+    },
+    "by_subtype": {
+      "adaptive_access": {
+        "semantic_accuracy": 0.7272727272727273,
+        "semantic_success": 8,
+        "total": 11
+      },
+      "cross_shot_comparison": {
+        "semantic_accuracy": 0.3333333333333333,
+        "semantic_success": 3,
+        "total": 9
+      },
+      "exact_window": {
+        "semantic_accuracy": 0.6666666666666666,
+        "semantic_success": 4,
+        "total": 6
+      },
+      "same_shot_alignment": {
+        "semantic_accuracy": 0.3333333333333333,
+        "semantic_success": 2,
+        "total": 6
+      },
+      "sampling_constrained": {
+        "semantic_accuracy": 0.875,
+        "semantic_success": 7,
+        "total": 8
+      },
+      "simple_retrieval": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 13,
+        "total": 13
+      },
+      "subtree_discovery": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 7,
+        "total": 7
+      }
+    },
+    "semantic_accuracy": 0.7333333333333333,
+    "semantic_success": 44,
+    "total": 60
+  },
+  "prompt_only_heldout": {
+    "by_category": {
+      "execution_failure": 11,
+      "semantic_failure": 21,
+      "success": 76
+    },
+    "by_code": {
+      "aligned_second_hash_mismatch": 1,
+      "policy_rejected": 6,
+      "resource_decision_mismatch": 1,
+      "runtime_error": 5,
+      "semantic_success": 76,
+      "signal_dtype_mismatch": 18,
+      "signal_size_mismatch": 1
+    },
+    "by_level": {
+      "L1": {
+        "semantic_accuracy": 0.9583333333333334,
+        "semantic_success": 23,
+        "total": 24
+      },
+      "L2": {
+        "semantic_accuracy": 0.7894736842105263,
+        "semantic_success": 30,
+        "total": 38
+      },
+      "L3": {
+        "semantic_accuracy": 0.5,
+        "semantic_success": 23,
+        "total": 46
+      }
+    },
+    "by_model": {
+      "qwen3.8-chat": {
+        "semantic_accuracy": 0.7037037037037037,
+        "semantic_success": 76,
+        "total": 108
+      }
+    },
+    "by_subtype": {
+      "adaptive_access": {
+        "semantic_accuracy": 0.8,
+        "semantic_success": 12,
+        "total": 15
+      },
+      "cross_shot_comparison": {
+        "semantic_accuracy": 0.25,
+        "semantic_success": 4,
+        "total": 16
+      },
+      "exact_window": {
+        "semantic_accuracy": 0.6153846153846154,
+        "semantic_success": 8,
+        "total": 13
+      },
+      "same_shot_alignment": {
+        "semantic_accuracy": 0.4666666666666667,
+        "semantic_success": 7,
+        "total": 15
+      },
+      "sampling_constrained": {
+        "semantic_accuracy": 0.8333333333333334,
+        "semantic_success": 10,
+        "total": 12
+      },
+      "simple_retrieval": {
+        "semantic_accuracy": 0.9583333333333334,
+        "semantic_success": 23,
+        "total": 24
+      },
+      "subtree_discovery": {
+        "semantic_accuracy": 0.9230769230769231,
+        "semantic_success": 12,
+        "total": 13
+      }
+    },
+    "semantic_accuracy": 0.7037037037037037,
+    "semantic_success": 76,
+    "total": 108
+  },
+  "schema_version": "1.0",
+  "single_round_ablation": {
+    "by_category": {
+      "semantic_failure": 3,
+      "success": 57
+    },
+    "by_code": {
+      "resource_decision_mismatch": 1,
+      "semantic_success": 57,
+      "signal_dtype_mismatch": 1,
+      "signal_size_mismatch": 1
+    },
+    "by_level": {
+      "L1": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 13,
+        "total": 13
+      },
+      "L2": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 21,
+        "total": 21
+      },
+      "L3": {
+        "semantic_accuracy": 0.8846153846153846,
+        "semantic_success": 23,
+        "total": 26
+      }
+    },
+    "by_model": {
+      "qwen3.8-chat": {
+        "semantic_accuracy": 0.95,
+        "semantic_success": 57,
+        "total": 60
+      }
+    },
+    "by_subtype": {
+      "adaptive_access": {
+        "semantic_accuracy": 0.8181818181818182,
+        "semantic_success": 9,
+        "total": 11
+      },
+      "cross_shot_comparison": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 9,
+        "total": 9
+      },
+      "exact_window": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 6,
+        "total": 6
+      },
+      "same_shot_alignment": {
+        "semantic_accuracy": 0.8333333333333334,
+        "semantic_success": 5,
+        "total": 6
+      },
+      "sampling_constrained": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 8,
+        "total": 8
+      },
+      "simple_retrieval": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 13,
+        "total": 13
+      },
+      "subtree_discovery": {
+        "semantic_accuracy": 1.0,
+        "semantic_success": 7,
+        "total": 7
+      }
+    },
+    "semantic_accuracy": 0.95,
+    "semantic_success": 57,
+    "total": 60
+  }
+}

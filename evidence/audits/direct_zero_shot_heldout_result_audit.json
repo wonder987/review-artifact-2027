@@ -1,0 +1,87 @@
+{
+  "audit_date": "2026-09-29",
+  "condition": "primary-zero-shot-v2",
+  "split": "held_out",
+  "evaluation_mode": "diagnostic-v2",
+  "evaluator_version": "semantic-evaluator-v2",
+  "artifact": {
+    "path": "experiments/packages/direct-zero-shot-heldout-v2-diagnostics.zip",
+    "sha256": "d81711b0fca40475667a1d05ff92237e07b1b2924a1fcbae164299154cd6bb84",
+    "file_count": 658,
+    "unsafe_paths": 0,
+    "duplicate_names": 0
+  },
+  "integrity": {
+    "execution_record_count": 324,
+    "evaluation_record_count": 324,
+    "evaluation_unique_pairs": 324,
+    "package_entry_count": 324,
+    "all_embedded_hashes_match": true,
+    "evaluation_jsonl_sha256": "f16ead9b1ce51e6beae159189eae7e8aae37e4d4908e59da7e2d7a26ba6d0865",
+    "gold_reference_index_sha256": "a1b8e0f877213c4b1bfff89ffd6fdca08f6e1b0648c2bb4ad6cba8fb9d1de1e5",
+    "package_manifest_sha256": "9922b58e1650ffb236e320da71ee9899a8efe1933cfc190a951d36ae95d645ef",
+    "protocol_sha256": "1838d337ca7d1fe06a1c918ba03276ce34fb7c89614ccf68ee88046cd01f38b3",
+    "task_manifest_sha256": "5c00943dd49ff5e7ff67d318e9dda3fcb394164b407c02ecaf261e8b6eff6fac"
+  },
+  "aggregate": {
+    "total": 324,
+    "execution_success": 75,
+    "execution_failure": 249,
+    "protocol_valid": 68,
+    "protocol_failure": 7,
+    "semantic_failure": 56,
+    "semantic_success": 12,
+    "semantic_accuracy": 0.037037037037037035,
+    "macro_level_accuracy": 0.04361598440545809
+  },
+  "by_model": {
+    "qwen3.8-chat": {
+      "total": 108,
+      "syntax_valid": 106,
+      "execution_success": 0,
+      "semantic_success": 0,
+      "semantic_accuracy": 0.0,
+      "L1": {"success": 0, "total": 24},
+      "L2": {"success": 0, "total": 38},
+      "L3": {"success": 0, "total": 46}
+    },
+    "deepseek-v4-flash-ascend1": {
+      "total": 108,
+      "syntax_valid": 103,
+      "execution_success": 21,
+      "semantic_success": 3,
+      "semantic_accuracy": 0.027777777777777776,
+      "L1": {"success": 0, "total": 24},
+      "L2": {"success": 3, "total": 38},
+      "L3": {"success": 0, "total": 46}
+    },
+    "gemini-3.5-flash-lite": {
+      "total": 108,
+      "syntax_valid": 78,
+      "execution_success": 54,
+      "semantic_success": 9,
+      "semantic_accuracy": 0.08333333333333333,
+      "L1": {"success": 5, "total": 24},
+      "L2": {"success": 4, "total": 38},
+      "L3": {"success": 0, "total": 46}
+    }
+  },
+  "by_level": {
+    "L1": {"success": 5, "total": 72, "accuracy": 0.06944444444444445},
+    "L2": {"success": 7, "total": 114, "accuracy": 0.06140350877192982},
+    "L3": {"success": 0, "total": 138, "accuracy": 0.0}
+  },
+  "by_subtype": {
+    "simple_retrieval": {"success": 5, "total": 72},
+    "subtree_discovery": {"success": 3, "total": 39},
+    "exact_window": {"success": 0, "total": 39},
+    "sampling_constrained": {"success": 4, "total": 36},
+    "same_shot_alignment": {"success": 0, "total": 45},
+    "cross_shot_comparison": {"success": 0, "total": 48},
+    "adaptive_access": {"success": 0, "total": 45}
+  },
+  "evaluation_mode_amendment": {
+    "path": "experiments/audits/direct_zero_shot_v2_evaluation_mode_amendment.json",
+    "sha256": "c8aef0853bae3b72d293dd3730bfc948e8766c990e59b7872ac3ccc4a7d66b6b"
+  }
+}

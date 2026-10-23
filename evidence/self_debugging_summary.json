@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "condition": "domain_adapted_self_debugging",
+  "model": "qwen3.8-chat",
+  "held_out_tasks": 108,
+  "reused_grounded_initial_successes": 76,
+  "eligible_initial_failures": 32,
+  "repair_execution_successes": 32,
+  "new_semantic_successes": 17,
+  "terminal_semantic_successes": 93,
+  "terminal_semantic_accuracy": 0.8611111111111112,
+  "repair_subset_semantic_accuracy": 0.53125,
+  "source_archive": "archives/self-debugging-heldout-qwen-v1-diagnostics-round-0.zip",
+  "notes": [
+    "The baseline reuses the same 108 Qwen grounded Round-0 programs as the full method.",
+    "Only the 32 initially unsuccessful programs receive the two-stage Self-Debugging explanation and repair call.",
+    "The baseline receives the original grounded task, previous program, raw execution observation, and a binary hidden-test rejection; it does not receive PA-SCoRe semantic mismatch categories, affected paths, expected arrays, expected hashes, or numerical answers."
+  ]
+}

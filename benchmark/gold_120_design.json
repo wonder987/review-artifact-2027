@@ -1,0 +1,22 @@
+{
+  "benchmark_name": "PA-SCoRe MDSplus Gold-120",
+  "target_task_count": 120,
+  "candidate_pool_target": 200,
+  "minimum_distinct_shots": 15,
+  "minimum_distinct_subtrees": 7,
+  "task_quotas": {
+    "basic_full_retrieval": 30,
+    "metadata_schema_linking": 25,
+    "time_window_and_sampling": 25,
+    "resource_aware_preflight": 20,
+    "failure_diagnosis_and_repair": 20
+  },
+  "selection_rules": {
+    "group_split_key": "shot",
+    "exclude_duplicate_target": true,
+    "require_repeat_validation": true,
+    "large_signal_full_read_forbidden": true,
+    "max_full_read_points": 5000000,
+    "max_full_read_total_mib": 256.0
+  }
+}

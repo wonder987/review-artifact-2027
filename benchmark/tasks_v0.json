@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.1",
+  "benchmark_name": "PA-SCoRe MDSplus Benchmark",
+  "created_date": "2026-09-19",
+  "tasks": [
+    {
+      "id": "east_ipg_147001_full_retrieval",
+      "category": "basic_signal_retrieval",
+      "difficulty": "L1",
+      "user_request": "Write Python code to retrieve the IPG signal and its time axis for EAST shot 147001 from MDSplus.",
+      "target": {
+        "server": "202.127.204.12",
+        "tree": "east",
+        "shot": 147001,
+        "node": "\\ipg",
+        "default_path": null
+      },
+      "operation": {
+        "kind": "full_retrieval",
+        "requires_time_axis": true
+      },
+      "oracle": {
+        "reference_result": "../results/gold_001.json",
+        "signal_size": 270000,
+        "time_axis_size": 270000,
+        "signal_dtype": "float32",
+        "signal_sha256": "d5c5f9ffd3bba72331418a9491e824b834d55558e3eb47c022c5d76510f4e631",
+        "time_axis_sha256": "63d4ee9f36cefaf0e49d0aefec41a49297895cdfaa9a2fd752cae436ab6dfc28",
+        "time_start": -7.0,
+        "time_end": 19.9999,
+        "checks": [
+          "execution_success",
+          "correct_access_target",
+          "signal_non_empty",
+          "signal_time_same_size",
+          "all_signal_values_finite",
+          "time_axis_monotonic_non_decreasing",
+          "exact_signal_hash",
+          "exact_time_axis_hash"
+        ]
+      },
+      "safety_policy": {
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "expected_decision": "allow_full_read"
+      },
+      "verification": {
+        "source": "MDSplus tutorial and manual execution on cs1",
+        "repeat_runs": 2,
+        "stable": true
+      }
+    },
+    {
+      "id": "east_axuv_div1_106915_preflight",
+      "category": "performance_aware_access_planning",
+      "difficulty": "L3",
+      "user_request": "Write Python code to retrieve the AXUV_DIV1 signal and its time axis for EAST shot 106915 from MDSplus.",
+      "target": {
+        "server": "202.127.204.12",
+        "tree": "east",
+        "shot": 106915,
+        "node": "\\AXUV_DIV1",
+        "default_path": "t2"
+      },
+      "operation": {
+        "kind": "metadata_preflight",
+        "requires_time_axis": true,
+        "must_not_load_full_signal": true
+      },
+      "oracle": {
+        "reference_result": "../results/gold_002_preflight.json",
+        "daqtime": 1064.0,
+        "frequency": 200000.0,
+        "estimated_points": 212800000,
+        "estimated_signal_mib": 811.768,
+        "estimated_time_axis_mib": 1623.535,
+        "estimated_total_mib": 2435.303,
+        "checks": [
+          "execution_success",
+          "correct_access_target",
+          "correct_default_path",
+          "metadata_read_without_full_signal",
+          "correct_point_estimate",
+          "correct_resource_decision",
+          "full_read_blocked"
+        ]
+      },
+      "safety_policy": {
+        "max_points": 5000000,
+        "max_total_mib": 256.0,
+        "expected_decision": "limit_time_window_or_downsample"
+      },
+      "verification": {
+        "source": "MDSplus tutorial and metadata preflight on cs1",
+        "repeat_runs": 2,
+        "stable": true,
+        "observed_naive_behavior": "A direct size evaluation did not complete promptly and was interrupted."
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{booktabs}
+\begin{document}
+\begin{table*}[t]
+\centering
+\caption{Observed per-task model usage and stage time on matched Held-out cases. Values are means within each model. API time includes network and retries; execution time covers launched programs only. Incomplete API requests are excluded from both paired rows for that model.}
+\label{tab:cost}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Method & $n$ & Calls & Input tokens & Output tokens & API time (s) & Exec. time (s) \\
+\midrule
+Qwen 3.8 Chat & Direct Zero-shot & 108 & 1.00 & 417.00 & 1914.67 & 86.88 & 1.62 \\
+ & Full PA-SCoRe & 108 & 1.33 & 2171.03 & 1972.32 & 97.37 & 6.93 \\
+\midrule
+DeepSeek V4 Flash Ascend1 & Direct Zero-shot & 102 & 1.00 & 385.58 & 1219.82 & 116.68 & 6.52 \\
+ & Full PA-SCoRe & 102 & 1.57 & 2579.80 & 1804.79 & 226.56 & 9.07 \\
+\midrule
+Gemini 3.5 Flash Lite & Direct Zero-shot & 108 & 1.00 & 418.20 & 1857.69 & 8.63 & 6.47 \\
+ & Full PA-SCoRe & 108 & 1.44 & 2835.08 & 2504.98 & 10.51 & 8.02 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\end{document}

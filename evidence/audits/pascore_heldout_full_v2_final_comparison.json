@@ -1,0 +1,287 @@
+{
+  "analysis": {
+    "direct": {
+      "by_category": {
+        "execution_failure": 249,
+        "protocol_failure": 7,
+        "semantic_failure": 56,
+        "success": 12
+      },
+      "by_code": {
+        "api_invocation_error": 149,
+        "missing_resource_decision": 7,
+        "node_lookup_error": 6,
+        "policy_rejected": 37,
+        "resource_decision_mismatch": 4,
+        "runtime_error": 54,
+        "semantic_success": 12,
+        "signal_dtype_mismatch": 29,
+        "signal_hash_mismatch": 6,
+        "signal_size_mismatch": 7,
+        "target_identity_mismatch": 5,
+        "time_axis_dtype_mismatch": 4,
+        "time_axis_hash_mismatch": 1,
+        "timeout": 3
+      },
+      "by_level": {
+        "L1": {
+          "semantic_accuracy": 0.06944444444444445,
+          "semantic_success": 5,
+          "total": 72
+        },
+        "L2": {
+          "semantic_accuracy": 0.06140350877192982,
+          "semantic_success": 7,
+          "total": 114
+        },
+        "L3": {
+          "semantic_accuracy": 0.0,
+          "semantic_success": 0,
+          "total": 138
+        }
+      },
+      "by_model": {
+        "deepseek-v4-flash-ascend1": {
+          "semantic_accuracy": 0.027777777777777776,
+          "semantic_success": 3,
+          "total": 108
+        },
+        "gemini-3.5-flash-lite": {
+          "semantic_accuracy": 0.08333333333333333,
+          "semantic_success": 9,
+          "total": 108
+        },
+        "qwen3.8-chat": {
+          "semantic_accuracy": 0.0,
+          "semantic_success": 0,
+          "total": 108
+        }
+      },
+      "by_subtype": {
+        "adaptive_access": {
+          "semantic_accuracy": 0.0,
+          "semantic_success": 0,
+          "total": 45
+        },
+        "cross_shot_comparison": {
+          "semantic_accuracy": 0.0,
+          "semantic_success": 0,
+          "total": 48
+        },
+        "exact_window": {
+          "semantic_accuracy": 0.0,
+          "semantic_success": 0,
+          "total": 39
+        },
+        "same_shot_alignment": {
+          "semantic_accuracy": 0.0,
+          "semantic_success": 0,
+          "total": 45
+        },
+        "sampling_constrained": {
+          "semantic_accuracy": 0.1111111111111111,
+          "semantic_success": 4,
+          "total": 36
+        },
+        "simple_retrieval": {
+          "semantic_accuracy": 0.06944444444444445,
+          "semantic_success": 5,
+          "total": 72
+        },
+        "subtree_discovery": {
+          "semantic_accuracy": 0.07692307692307693,
+          "semantic_success": 3,
+          "total": 39
+        }
+      },
+      "semantic_accuracy": 0.037037037037037035,
+      "semantic_success": 12,
+      "total": 324
+    },
+    "paired": {
+      "macro_level_accuracy_difference": {
+        "confidence_high": 0.9604309687261633,
+        "confidence_level": 0.95,
+        "confidence_low": 0.906263242647682,
+        "estimate": 0.9346448851597593,
+        "interval": "percentile_cluster_bootstrap",
+        "iterations": 10000,
+        "resampling_unit": "task",
+        "seed": 20260930,
+        "stratified_by": "level"
+      },
+      "mcnemar": {
+        "direct_only": 0,
+        "discordant": 303,
+        "method_only": 303,
+        "p_value": 1.2272733663244316e-91,
+        "test": "exact_two_sided_mcnemar"
+      },
+      "mcnemar_by_model": {
+        "deepseek-v4-flash-ascend1": {
+          "direct_only": 0,
+          "discordant": 99,
+          "method_only": 99,
+          "p_value": 3.1554436208840472e-30,
+          "test": "exact_two_sided_mcnemar"
+        },
+        "gemini-3.5-flash-lite": {
+          "direct_only": 0,
+          "discordant": 99,
+          "method_only": 99,
+          "p_value": 3.1554436208840472e-30,
+          "test": "exact_two_sided_mcnemar"
+        },
+        "qwen3.8-chat": {
+          "direct_only": 0,
+          "discordant": 105,
+          "method_only": 105,
+          "p_value": 4.930380657631324e-32,
+          "test": "exact_two_sided_mcnemar"
+        }
+      },
+      "micro_accuracy_difference": {
+        "confidence_high": 0.9598765432098766,
+        "confidence_level": 0.95,
+        "confidence_low": 0.9074074074074074,
+        "estimate": 0.9351851851851852,
+        "interval": "percentile_cluster_bootstrap",
+        "iterations": 10000,
+        "resampling_unit": "task",
+        "seed": 20260930
+      }
+    },
+    "pascore": {
+      "by_category": {
+        "execution_failure": 1,
+        "generation_failure": 4,
+        "semantic_failure": 4,
+        "success": 315
+      },
+      "by_code": {
+        "aligned_second_hash_mismatch": 1,
+        "generation_timeout": 4,
+        "policy_rejected": 1,
+        "semantic_success": 315,
+        "signal_dtype_mismatch": 2,
+        "signal_size_mismatch": 1
+      },
+      "by_level": {
+        "L1": {
+          "semantic_accuracy": 1.0,
+          "semantic_success": 72,
+          "total": 72
+        },
+        "L2": {
+          "semantic_accuracy": 1.0,
+          "semantic_success": 114,
+          "total": 114
+        },
+        "L3": {
+          "semantic_accuracy": 0.9347826086956522,
+          "semantic_success": 129,
+          "total": 138
+        }
+      },
+      "by_model": {
+        "deepseek-v4-flash-ascend1": {
+          "semantic_accuracy": 0.9444444444444444,
+          "semantic_success": 102,
+          "total": 108
+        },
+        "gemini-3.5-flash-lite": {
+          "semantic_accuracy": 1.0,
+          "semantic_success": 108,
+          "total": 108
+        },
+        "qwen3.8-chat": {
+          "semantic_accuracy": 0.9722222222222222,
+          "semantic_success": 105,
+          "total": 108
+        }
+      },
+      "by_subtype": {
+        "adaptive_access": {
+          "semantic_accuracy": 0.9777777777777777,
+          "semantic_success": 44,
+          "total": 45
+        },
+        "cross_shot_comparison": {
+          "semantic_accuracy": 0.9583333333333334,
+          "semantic_success": 46,
+          "total": 48
+        },
+        "exact_window": {
+          "semantic_accuracy": 1.0,
+          "semantic_success": 39,
+          "total": 39
+        },
+        "same_shot_alignment": {
+          "semantic_accuracy": 0.8666666666666667,
+          "semantic_success": 39,
+          "total": 45
+        },
+        "sampling_constrained": {
+          "semantic_accuracy": 1.0,
+          "semantic_success": 36,
+          "total": 36
+        },
+        "simple_retrieval": {
+          "semantic_accuracy": 1.0,
+          "semantic_success": 72,
+          "total": 72
+        },
+        "subtree_discovery": {
+          "semantic_accuracy": 1.0,
+          "semantic_success": 39,
+          "total": 39
+        }
+      },
+      "semantic_accuracy": 0.9722222222222222,
+      "semantic_success": 315,
+      "total": 324
+    },
+    "rounds": [
+      {
+        "eligible": 324,
+        "newly_successful": 197,
+        "round": 0
+      },
+      {
+        "eligible": 127,
+        "newly_successful": 100,
+        "round": 1
+      },
+      {
+        "eligible": 27,
+        "newly_successful": 18,
+        "round": 2
+      }
+    ],
+    "terminal_failure_count": 9
+  },
+  "artifacts": {
+    "direct": {
+      "path": "experiments\\packages\\direct-zero-shot-heldout-v2-diagnostics.zip",
+      "sha256": "d81711b0fca40475667a1d05ff92237e07b1b2924a1fcbae164299154cd6bb84"
+    },
+    "pascore_rounds": [
+      {
+        "path": "experiments\\packages\\pascore-heldout-full-v2-diagnostics-round-0.zip",
+        "round": 0,
+        "sha256": "a4f26935b0692c6649607f16d10bf84f4b21e95c0d65239279d62ba961152c07"
+      },
+      {
+        "path": "experiments\\packages\\pascore-heldout-full-v2-diagnostics-round-1.zip",
+        "round": 1,
+        "sha256": "5fece80ac52d1aa95e28f7c103663f9f02311d433a0f101d5dcef2a2cbc6585d"
+      },
+      {
+        "path": "experiments\\packages\\pascore-heldout-full-v2-diagnostics-round-2.zip",
+        "round": 2,
+        "sha256": "b533056e9b0fa9a80de8c940b3447f9b5a266945062025be8420385d4e6affd1"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

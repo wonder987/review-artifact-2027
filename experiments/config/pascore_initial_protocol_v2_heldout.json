@@ -1,0 +1,26 @@
+{
+  "default_split": "pilot",
+  "frozen": true,
+  "frozen_model_aliases": [
+    "qwen3.8-chat",
+    "deepseek-v4-flash-ascend1",
+    "gemini-3.5-flash-lite"
+  ],
+  "generation_attempts": 1,
+  "generation_mode": "direct_zero_shot",
+  "held_out_enabled": true,
+  "max_network_retries": 3,
+  "max_output_tokens": 8192,
+  "pilot_gate_status": "passed",
+  "prompt_version": "pascore-grounded-v2",
+  "protocol_id": "pascore-initial-heldout-v2",
+  "repair_rounds": 0,
+  "request_timeout_seconds": 600,
+  "retry_backoff_seconds": [
+    2,
+    4,
+    8
+  ],
+  "schema_version": "2.0",
+  "temperature": 0
+}

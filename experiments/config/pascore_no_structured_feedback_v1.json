@@ -1,0 +1,9 @@
+{
+  "condition_id": "no_structured_feedback",
+  "failure_diagnosis": "multi_grained",
+  "max_repair_rounds": 2,
+  "metadata_grounding": true,
+  "resource_guard": true,
+  "schema_version": "1.0",
+  "structured_feedback": false
+}

@@ -1,0 +1,32 @@
+{
+  "condition": "primary-zero-shot-v2",
+  "frozen_date": "2026-09-24",
+  "held_out_task_count": 108,
+  "models": [
+    "qwen3.8-chat",
+    "deepseek-v4-flash-ascend1",
+    "gemini-3.5-flash-lite"
+  ],
+  "planned_call_count": 324,
+  "sha256": {
+    "benchmark/gold138_manifest.json": "5c00943dd49ff5e7ff67d318e9dda3fcb394164b407c02ecaf261e8b6eff6fac",
+    "benchmark/gold138_primary_zero_shot_v2.jsonl": "d72a927cf5fd3157bf54999f2d481e4031597f4e2a5431066ee6b25f3f0e8903",
+    "benchmark/gold138_prompt_set_index_v2.json": "1d03d754edaf3cd10f384e969a24cc3b88fdfa1719285fd26574ded7c4ab7998",
+    "experiments/config/models_direct_zero_shot_v2.json": "8f7bfed35c67cb7da7f2e659b1f04173b48a0922097569bf415f2481aca5a472",
+    "experiments/config/protocol_v2_heldout.json": "1838d337ca7d1fe06a1c918ba03276ce34fb7c89614ccf68ee88046cd01f38b3",
+    "scripts/openai_compatible_client.py": "910076b3d7fe0c63641079dc7e2f9983d2fa38029aa17255c23fb3fd1c2cc582",
+    "scripts/run_llm_generation.py": "fa0554b0f755be2350b0f878b69a5cc4ff89cbfbd566c46b3c44bca2bd6f34b3",
+    "scripts/semantic_evaluator.py": "3f42e9242e133d633c4af4ff733877557bdd96688bdabd1bd939a0a873275619"
+  },
+  "smoke_gate": {
+    "infrastructure_failure": 0,
+    "model_evaluable": 9,
+    "status": "passed",
+    "task_ids": [
+      "gold138_l1_025",
+      "gold138_l2_014",
+      "gold138_l3_037"
+    ]
+  },
+  "split": "held_out"
+}

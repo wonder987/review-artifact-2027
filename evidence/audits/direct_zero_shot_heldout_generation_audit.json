@@ -1,0 +1,72 @@
+{
+  "audit_date": "2026-09-29",
+  "condition": "primary-zero-shot-v2",
+  "package": {
+    "entry_count": 324,
+    "path": "experiments/packages/direct-zero-shot-heldout-v2.zip",
+    "sha256": "aaaeb6b9c16f96e766c6ebad727a2d0ba45f97948a796feea47bcba37ed80969",
+    "unique_task_ids": 108
+  },
+  "split": "held_out",
+  "task_count": 108,
+  "models": {
+    "deepseek-v4-flash-ascend1": {
+      "program_count": 108,
+      "syntax_invalid": 5,
+      "syntax_invalid_task_ids": [
+        "gold138_l2_020",
+        "gold138_l2_033",
+        "gold138_l2_036",
+        "gold138_l2_039",
+        "gold138_l2_042"
+      ],
+      "syntax_valid": 103
+    },
+    "gemini-3.5-flash-lite": {
+      "program_count": 108,
+      "syntax_invalid": 30,
+      "syntax_invalid_task_ids": [
+        "gold138_l1_001",
+        "gold138_l1_002",
+        "gold138_l1_003",
+        "gold138_l1_009",
+        "gold138_l1_011",
+        "gold138_l1_013",
+        "gold138_l1_014",
+        "gold138_l1_016",
+        "gold138_l1_019",
+        "gold138_l1_021",
+        "gold138_l1_023",
+        "gold138_l2_001",
+        "gold138_l2_002",
+        "gold138_l2_003",
+        "gold138_l2_004",
+        "gold138_l2_006",
+        "gold138_l2_007",
+        "gold138_l2_009",
+        "gold138_l2_010",
+        "gold138_l2_011",
+        "gold138_l2_012",
+        "gold138_l2_013",
+        "gold138_l2_019",
+        "gold138_l2_021",
+        "gold138_l2_022",
+        "gold138_l2_027",
+        "gold138_l2_034",
+        "gold138_l2_042",
+        "gold138_l2_043",
+        "gold138_l3_023"
+      ],
+      "syntax_valid": 78
+    },
+    "qwen3.8-chat": {
+      "program_count": 108,
+      "syntax_invalid": 2,
+      "syntax_invalid_task_ids": [
+        "gold138_l2_024",
+        "gold138_l3_004"
+      ],
+      "syntax_valid": 106
+    }
+  }
+}
